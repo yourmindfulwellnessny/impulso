@@ -7,8 +7,8 @@
 <meta name="description" content="IMPULSO: 5 semanas con Monica Villalba para recuperar tu confianza, crear claridad y volver a avanzar en tu proyecto.">
 <meta property="og:title" content="IMPULSO · 5 semanas para volver a avanzar">
 <meta property="og:description" content="Recupera tu confianza, crea claridad y mantén el impulso. Mentoría individual con Monica Villalba.">
-<meta property="og:image" content="https://yourmindfulwellnessny.github.io/impulso/assets/impulso.jpg">
-<meta property="og:url" content="https://yourmindfulwellnessny.github.io/impulso/">
+<meta property="og:image" content="https://www.mindfulbymonica.com/impulso/assets/impulso.jpg">
+<meta property="og:url" content="https://www.mindfulbymonica.com/impulso/">
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="assets/logo.png">
@@ -525,7 +525,7 @@ footer a{color:#fff;text-decoration:none;font-weight:700}
         <div class="per">programa completo</div>
         <div class="per" id="cuotas-line" hidden></div>
       </div>
-      <p class="ask" id="price-off">Te cuento la inversión en tu llamada gratuita.</p>
+      <p class="ask" id="price-off">Reserva tu tiempo con Mónica y conoce los detalles del próximo grupo.</p>
       <ul>
         <li>5 sesiones 1:1 de 60 minutos</li>
         <li>Workbook exclusivo IMPULSO</li>
@@ -533,7 +533,7 @@ footer a{color:#fff;text-decoration:none;font-weight:700}
         <li>Comunidad y seguimiento</li>
         <li>Tu plan de 90 días</li>
       </ul>
-      <a class="btn mint full" id="btn-llamada" href="#" target="_blank" rel="noopener">✨ Quiero mi llamada gratuita</a>
+      <a class="btn mint full" id="btn-llamada" href="#" target="_blank" rel="noopener">✨ Quiero reservar mi tiempo</a>
       <div id="pay-on" hidden>
         <div class="or">o inscríbete ya</div>
         <div class="seg" id="seg" hidden>
@@ -622,9 +622,9 @@ checks.forEach(c => c.addEventListener("click", () => { c.setAttribute("aria-pre
 const precio = C.precio, cu = C.cuotas || {};
 let plan = "completo";
 const planTxt = () => plan === "cuotas" ? `en ${cu.numero} cuotas de ${money(cu.monto)}` : `pago completo de ${money(precio)}`;
-$("#btn-llamada").href = wa("Hola Mónica 💜 Quiero recuperar mi impulso. Me gustaría agendar mi llamada gratuita de 20 minutos para IMPULSO. Mi nombre es:");
+$("#btn-llamada").href = "https://www.mindfulbymonica.com/#store"; $("#btn-llamada").removeAttribute("target");
 $("#wa-footer").href = wa("Hola Mónica 💜 Tengo una pregunta sobre IMPULSO:");
-$("#link-evo").href = C.evolucion || "https://yourmindfulwellnessny.github.io/evolucion/";
+$("#link-evo").href = C.evolucion || "https://www.mindfulbymonica.com/evolucion/";
 if (precio) {
   $("#price-on").hidden = false; $("#price-off").hidden = true; $("#pay-on").hidden = false;
   $$(".js-precio").forEach(e => e.textContent = money(precio));

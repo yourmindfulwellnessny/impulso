@@ -3,7 +3,7 @@
    ===================================================== */
 window.CONFIG = {
   // PRECIO del programa completo (en dólares).
-  // Si lo dejas en null, la página invita a conocer la inversión en la llamada gratuita.
+  // Si lo dejas en null, la página invita a reservar tiempo con Mónica en el Wellness Store.
   precio: null,
 
   // PAGO EN CUOTAS (opcional). Si "activo" es false, la opción no aparece.
@@ -12,7 +12,7 @@ window.CONFIG = {
   // ENLACES DE PAGO DE STRIPE (Payment Links)
   // Si un enlace está vacío "", el botón de tarjeta abre WhatsApp para coordinar el pago.
   // En Stripe, en "After payment" pon esta dirección:
-  //   https://yourmindfulwellnessny.github.io/impulso/gracias.html?session_id={CHECKOUT_SESSION_ID}
+  //   https://www.mindfulbymonica.com/impulso/gracias.html?session_id={CHECKOUT_SESSION_ID}
   stripe: { completo: "", cuotas: "" },
 
   // Zelle
@@ -25,5 +25,5 @@ window.CONFIG = {
   whatsapp: "12016799969",
 
   // Página del programa Evolución (para la comparación)
-  evolucion: "https://yourmindfulwellnessny.github.io/evolucion/"
+  evolucion: "https://www.mindfulbymonica.com/evolucion/"
 };
