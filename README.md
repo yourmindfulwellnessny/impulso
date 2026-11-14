@@ -6,4 +6,4 @@ Página del programa IMPULSO: 5 semanas de mentoría con Monica Villalba.
 - `gracias.html`: página después del pago con tarjeta, que lleva a WhatsApp
 - `config.js`: precio, enlaces de pago, Zelle y WhatsApp
 
-Publicada en https://yourmindfulwellnessny.github.io/impulso/
+Publicada en https://www.mindfulbymonica.com/impulso/
