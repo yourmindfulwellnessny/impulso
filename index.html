@@ -3,355 +3,513 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Impulso · Mindful Wellness</title>
-<meta name="description" content="IMPULSO: 5 semanas con Monica Villalba para recuperar tu confianza, crear claridad y volver a avanzar en tu proyecto.">
+<title>IMPULSO · 5 semanas para volver a avanzar · Mindful Wellness by Monica V.</title>
+<meta name="description" content="IMPULSO, el programa bandera de Mindful Wellness by Monica V.: 5 semanas para recuperar tu confianza, crear claridad y retomar ese proyecto que dejaste a medias. Agenda tu conversación gratuita.">
 <meta property="og:title" content="IMPULSO · 5 semanas para volver a avanzar">
-<meta property="og:description" content="Recupera tu confianza, crea claridad y mantén el impulso. Mentoría individual con Monica Villalba.">
-<meta property="og:image" content="https://www.mindfulbymonica.com/impulso/assets/impulso.jpg">
+<meta property="og:description" content="¿Empezaste algo con toda la ilusión y se quedó a medias? Recupera tu confianza y retoma tu proyecto con Mónica Villalba.">
+<meta property="og:image" content="https://www.mindfulbymonica.com/impulso/assets/og-impulso.jpg">
 <meta property="og:url" content="https://www.mindfulbymonica.com/impulso/">
 <meta property="og:type" content="website">
+<meta property="og:locale" content="es_US">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="icon" href="assets/logo.png">
+<meta name="theme-color" content="#2a0b1d">
+<link rel="icon" href="assets/icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,500;1,600&family=Playfair+Display:wght@600;700;900&family=Nunito+Sans:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Outfit:wght@400;600;800;900&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="assets/hero-camino.jpg">
 <style>
 /* =====================================================
-   IMPULSO — 5 semanas. Identidad: la brújula.
-   Marca Mindful Wellness (lavanda + verde + dorado), con verde bosque
-   como color propio para diferenciarlo de Evolución.
-   Precio, pagos y WhatsApp → archivo config.js
+   IMPULSO · programa bandera de Mindful Wellness by Monica V.
+   Marca: noche/vino + lavanda + menta + dorado.
+   Precio, pagos y WhatsApp → config.js
    ===================================================== */
 :root{
-  --purple:#6B3FA0;      /* violeta del título IMPULSO */
-  --purple-d:#4A2873;
-  --lav:#B79CDB; --lav-l:#F1EAF9;
-  --olive:#5E7A45;       /* verde de los títulos del folleto */
-  --forest:#16261A;      /* verde bosque: color propio de Impulso */
-  --forest-2:#213A27;
-  --mint:#75d375; --mint-l:#E3F6E1;
-  --gold:#D9B45F; --gold-l:#F6E9C6;
-  --paper:#FBF8F3; --ink:#2C2433; --muted:#6C6274; --line:#ECE4EF;
+  --night:#2a0b1d; --night2:#3a1029; --wine:#4E1A38; --wine2:#6B2A4E;
+  --lav:#b256a7; --lav2:#d59bd0; --lav-l:#F3EDF6;
+  --mint:#75d375; --mint-l:#E6F7E4; --mint-d:#2f7a33;
+  --gold:#C9A45C; --gold2:#E7D3A6;
+  --ivory:#FDFBF8; --cream:#F6F0E8; --ink:#231A1F; --muted:#6E6369; --line:#E6DDD3;
+  --display:"Outfit","Nunito Sans",system-ui,sans-serif;
+  --serif:"Cormorant Garamond",Georgia,serif;
+  --r:22px;
   color-scheme:light;
 }
 *{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
-body{font-family:"Nunito Sans",sans-serif;background:var(--paper);color:var(--ink);line-height:1.6;font-size:19px;overflow-x:hidden}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
+body{font-family:"Nunito Sans",system-ui,sans-serif;background:var(--ivory);color:var(--ink);line-height:1.65;font-size:18px;overflow-x:hidden;-webkit-font-smoothing:antialiased}
 img{max-width:100%;display:block}
 [hidden]{display:none!important}
 a{color:inherit}
 :focus-visible{outline:3px solid var(--gold);outline-offset:3px}
-h1,h2,h3{font-family:"Playfair Display",serif;text-wrap:balance}
-.wrap{max-width:1100px;margin:0 auto;padding-inline:22px}
-section{padding-block:76px}
-.kicker{display:inline-block;font-size:.78rem;font-weight:900;letter-spacing:.22em;text-transform:uppercase;color:var(--olive);margin-bottom:12px}
-h2{font-size:clamp(2rem,4.8vw,3rem);line-height:1.1;color:var(--purple-d)}
-h2 em{font-family:"Cormorant Garamond",serif;font-style:italic;font-weight:600;color:var(--olive);font-size:1.1em}
-.center{text-align:center}
-.lead{font-size:1.1rem;color:var(--muted);max-width:60ch;margin-top:14px}
-.center .lead{margin-inline:auto}
-
-@keyframes rise{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:none}}
-@keyframes bob{50%{transform:translateY(-10px) rotate(1deg)}}
-@keyframes glow{0%,100%{box-shadow:0 0 0 0 rgba(117,211,117,.55)}50%{box-shadow:0 0 0 14px rgba(117,211,117,0)}}
+.wrap{max-width:1160px;margin:0 auto;padding-inline:22px}
+section{position:relative}
+.pad{padding-block:88px}
+.kicker{display:inline-flex;align-items:center;gap:10px;font:800 .78rem var(--display);letter-spacing:.24em;text-transform:uppercase;color:var(--lav)}
+.kicker::before{content:"";width:28px;height:2px;background:currentColor;border-radius:2px}
+.center .kicker::after{content:"";width:28px;height:2px;background:currentColor;border-radius:2px}
+h1,h2,h3{text-wrap:balance}
+h2{font:800 clamp(2rem,4.6vw,3.3rem)/1.05 var(--display);letter-spacing:-.02em;color:var(--wine);margin-top:14px}
+h2 em{font-family:var(--serif);font-style:italic;font-weight:600;color:var(--lav);letter-spacing:0;font-size:1.08em}
+.lead{font-size:1.12rem;color:var(--muted);max-width:60ch;margin-top:16px}
+.center{text-align:center}.center .lead{margin-inline:auto}
+.script{font-family:var(--serif);font-style:italic;font-weight:600}
 
 /* botones */
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font:900 1.06rem "Nunito Sans",sans-serif;text-decoration:none;border:0;cursor:pointer;border-radius:50px;padding:18px 34px;transition:transform .2s,box-shadow .2s}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font:800 1rem var(--display);letter-spacing:.02em;text-decoration:none;border:0;cursor:pointer;border-radius:60px;padding:18px 32px;transition:transform .25s,box-shadow .25s,background .25s;white-space:nowrap}
 .btn:hover{transform:translateY(-3px)}
-.btn.go{background:var(--purple);color:#fff;box-shadow:0 14px 30px -10px rgba(107,63,160,.65)}
-.btn.go:hover{box-shadow:0 18px 36px -10px rgba(107,63,160,.8)}
-.btn.mint{background:var(--mint);color:var(--forest);animation:glow 2.6s ease-in-out infinite}
-.btn.ghost{background:transparent;color:var(--purple);box-shadow:inset 0 0 0 2px var(--lav)}
-.btn.wa{background:#25D366;color:#073B1E}
-.btn.full{width:100%}
+.btn .arr{transition:transform .25s}.btn:hover .arr{transform:translateX(4px)}
+.btn.mint{background:var(--mint);color:#0f2e12;box-shadow:0 16px 34px -12px rgba(117,211,117,.75)}
+.btn.mint.pulse{animation:pulse 2.8s ease-in-out infinite}
+.btn.lav{background:var(--lav);color:#fff;box-shadow:0 16px 34px -12px rgba(178,86,167,.7)}
+.btn.wine{background:var(--wine);color:#fff}
+.btn.line{background:transparent;color:#fff;box-shadow:inset 0 0 0 1.5px rgba(255,255,255,.55)}
+.btn.line:hover{background:rgba(255,255,255,.1)}
+.btn.line-d{background:transparent;color:var(--wine);box-shadow:inset 0 0 0 1.5px var(--lav2)}
+.btn.wa{background:#25D366;color:#063b1c}
+.btn.full{width:100%;white-space:normal}
+@keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(117,211,117,.6),0 16px 34px -12px rgba(117,211,117,.75)}50%{box-shadow:0 0 0 14px rgba(117,211,117,0),0 16px 34px -12px rgba(117,211,117,.75)}}
+@keyframes rise{from{opacity:0;transform:translateY(26px)}to{opacity:1;transform:none}}
+@keyframes zoom{from{transform:scale(1.12)}to{transform:scale(1)}}
+@keyframes drift{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@keyframes bob{50%{transform:translateY(-10px) rotate(-1deg)}}
 
-/* barra superior */
-.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:rgba(251,248,243,.9);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
-.top .wrap{height:62px;display:flex;align-items:center;justify-content:space-between;gap:12px}
-.top img{height:38px;width:auto}
-.top .btn{padding:10px 18px;font-size:.86rem}
-.readbar{position:fixed;left:0;top:0;height:4px;width:0;z-index:60;background:linear-gradient(90deg,var(--lav),var(--mint),var(--gold))}
+/* barra de progreso + navegación */
+.readbar{position:fixed;left:0;top:0;height:3px;width:0;z-index:70;background:linear-gradient(90deg,var(--lav),var(--mint),var(--gold))}
+.nav{position:fixed;inset:0 0 auto 0;z-index:60;transition:background .35s,box-shadow .35s,padding .35s;padding-top:env(safe-area-inset-top,0px)}
+.nav .wrap{height:76px;display:flex;align-items:center;justify-content:space-between;gap:16px;transition:height .35s}
+.brand{display:flex;flex-direction:column;align-items:center;text-decoration:none;line-height:1}
+.brand img{height:46px;width:auto;transition:height .35s}
+.brand small{font-family:var(--serif);font-style:italic;font-weight:600;font-size:.98rem;color:var(--gold2);margin-top:2px;letter-spacing:.02em}
+.brand .on-light{display:none}
+.nav ul{display:none;list-style:none;gap:28px}
+.nav ul a{text-decoration:none;font:600 .92rem var(--display);color:#fff;opacity:.85;letter-spacing:.02em}
+.nav ul a:hover{opacity:1;color:var(--mint)}
+.nav .btn{padding:11px 20px;font-size:.88rem}
+.nav.solid{background:rgba(253,251,248,.93);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);box-shadow:0 1px 0 var(--line)}
+.nav.solid .wrap{height:64px}
+.nav.solid .brand img{height:38px}
+.nav.solid .brand .on-dark{display:none}.nav.solid .brand .on-light{display:block}
+.nav.solid .brand small{color:var(--wine2)}
+.nav.solid ul a{color:var(--wine)}
+.nav.solid ul a:hover{color:var(--lav)}
 
-/* HERO */
-.hero{position:relative;overflow:hidden;padding-block:46px 64px;
-  background:radial-gradient(55% 60% at 100% 0%,rgba(183,156,219,.45),transparent 70%),radial-gradient(50% 55% at 0% 100%,rgba(117,211,117,.25),transparent 70%),var(--paper)}
-.hero-grid{display:grid;grid-template-columns:1fr;grid-template-areas:"top" "book" "bot";gap:26px;align-items:center}
-.h-top{grid-area:top}.h-bot{grid-area:bot}.book{grid-area:book}
-.hero-grid>*{min-width:0}
-.hook{font-family:"Cormorant Garamond",serif;font-style:italic;font-weight:600;font-size:clamp(1.35rem,3.4vw,1.75rem);color:var(--olive);line-height:1.25;animation:rise .8s both}
-.hero h1{font-size:clamp(4rem,15vw,7.2rem);line-height:.9;color:var(--purple);letter-spacing:.02em;margin-top:14px;animation:rise .9s .1s both}
-.hero h1 .leaf{display:inline-block;color:var(--olive);font-size:.4em;vertical-align:top;margin-left:6px;transform:rotate(-20deg)}
-.hero .promise{font-size:clamp(1.15rem,2.6vw,1.4rem);font-weight:800;color:var(--ink);margin-top:18px;max-width:30ch;line-height:1.35;animation:rise .9s .2s both}
-.hero .promise mark{background:linear-gradient(transparent 58%,var(--mint-l) 58%);color:inherit}
-.hero .sub{color:var(--muted);margin-top:12px;max-width:46ch;animation:rise .9s .3s both}
-.hero .actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px;animation:rise .9s .4s both}
-.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:26px;animation:rise .9s .5s both}
-.chips span{background:#fff;border:1px solid var(--line);border-radius:30px;padding:8px 14px;font-size:.86rem;font-weight:800;color:var(--purple-d)}
-.chips b{color:var(--olive)}
-.book{position:relative;max-width:440px;justify-self:center;width:100%;animation:rise 1s .25s both}
-.book img{width:100%;border-radius:20px;box-shadow:0 34px 70px -28px rgba(74,40,115,.55);animation:bob 7s ease-in-out infinite}
-.book .stamp{position:absolute;left:-6px;bottom:8%;background:var(--forest);color:#fff;border-radius:18px;padding:12px 16px;box-shadow:0 16px 30px rgba(0,0,0,.25);font-weight:800;font-size:.86rem;line-height:1.3;transform:rotate(-4deg)}
-.book .stamp b{display:block;color:var(--gold);font-family:"Playfair Display",serif;font-size:1.3rem}
+/* HERO: foto completa de fondo, texto encima */
+.hero{min-height:100svh;display:flex;align-items:flex-end;color:#fff;overflow:hidden;isolation:isolate;background:var(--night)}
+.hero .bg{position:absolute;inset:0;z-index:-2;background:url(assets/hero-camino.jpg) center 40%/cover no-repeat;animation:zoom 14s ease-out both}
+.hero::before{content:"";position:absolute;inset:0;z-index:-1;background:
+  linear-gradient(180deg,rgba(42,11,29,.55) 0%,rgba(42,11,29,.15) 30%,rgba(42,11,29,.55) 62%,rgba(42,11,29,.96) 100%),
+  radial-gradient(60% 50% at 0% 100%,rgba(178,86,167,.45),transparent 70%)}
+.hero .wrap{width:100%;padding-top:120px;padding-bottom:56px}
+.hero .flag{display:inline-flex;align-items:center;gap:10px;font:800 .74rem var(--display);letter-spacing:.24em;text-transform:uppercase;color:var(--gold2);border:1px solid rgba(231,211,166,.45);border-radius:40px;padding:8px 16px;background:rgba(42,11,29,.35);backdrop-filter:blur(6px);animation:rise .8s .1s both}
+.hero .flag i{width:7px;height:7px;border-radius:50%;background:var(--mint);box-shadow:0 0 0 4px rgba(117,211,117,.25)}
+.hero .hook{font-family:var(--serif);font-style:italic;font-weight:500;font-size:clamp(1.45rem,3.6vw,2.2rem);line-height:1.2;margin-top:22px;max-width:24ch;color:#fff;animation:rise .9s .25s both}
+.hero h1{position:relative;display:inline-block;font:900 clamp(4.4rem,17vw,11.5rem)/.86 var(--display);letter-spacing:-.035em;margin-top:16px;padding-bottom:18px;color:#fff;text-shadow:0 10px 40px rgba(42,11,29,.45)}
+.hero h1 span{display:inline-block;animation:rise .8s both}
+.hero h1 span:nth-child(n+5){color:var(--gold2)}
+.hero h1::after{content:"";position:absolute;left:4px;bottom:0;height:5px;width:0;border-radius:5px;background:linear-gradient(90deg,var(--mint),var(--gold2),var(--lav));animation:bar 1.2s 1.1s cubic-bezier(.2,.8,.2,1) forwards}
+@keyframes bar{to{width:calc(100% - 8px)}}
+.hero .promise{font:600 clamp(1.1rem,2.4vw,1.45rem)/1.4 var(--display);max-width:34ch;margin-top:20px;color:#F4ECF2;animation:rise .9s .7s both}
+.hero .promise b{color:var(--mint);font-weight:800}
+.hero .actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px;animation:rise .9s .85s both}
+.hero .facts{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;margin-top:40px;border-radius:18px;overflow:hidden;background:rgba(255,255,255,.18);max-width:760px;animation:rise .9s 1s both}
+.hero .facts div{background:rgba(42,11,29,.55);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);padding:14px 16px}
+.hero .facts b{display:block;font:800 1.5rem/1 var(--display);color:#fff}
+.hero .facts span{display:block;margin-top:6px;font-size:.82rem;line-height:1.35;color:#E4D6DF;letter-spacing:.02em}
+.hide-s{display:none}
+.scrollcue{position:absolute;right:22px;bottom:28px;writing-mode:vertical-rl;font:700 .7rem var(--display);letter-spacing:.3em;text-transform:uppercase;color:rgba(255,255,255,.7);display:none}
+.scrollcue::after{content:"";display:block;width:1px;height:60px;margin:12px auto 0;background:linear-gradient(rgba(255,255,255,.8),transparent)}
+
+/* franja de frases */
+.marquee{background:var(--lav);color:#fff;overflow:hidden;padding:16px 0;border-block:1px solid rgba(255,255,255,.2)}
+.marquee .track{display:flex;width:max-content;animation:drift 38s linear infinite}
+.marquee span{font-family:var(--serif);font-style:italic;font-weight:600;font-size:1.5rem;padding:0 26px;white-space:nowrap;display:flex;align-items:center;gap:52px}
+.marquee span::after{content:"";width:8px;height:8px;border-radius:50%;background:var(--mint)}
 
 /* EL CICLO */
-.cycle{background:#fff}
-.cycle-grid{display:grid;grid-template-columns:1fr;gap:36px;align-items:center}
+.cycle{background:var(--ivory)}
+.cycle-grid{display:grid;gap:40px;align-items:center}
 .cycle-grid>*{min-width:0}
-.loop{position:relative;width:100%;max-width:440px;aspect-ratio:1;justify-self:center}
-.loop .node{position:absolute;width:122px;margin-left:-61px;margin-top:-22px;text-align:center;font-weight:900;font-size:.88rem;border-radius:30px;padding:10px 8px;background:var(--lav-l);color:var(--purple-d);border:2px solid transparent;transition:all .45s}
-.loop .node.on{background:var(--purple);color:#fff;transform:scale(1.08);box-shadow:0 10px 24px rgba(107,63,160,.4)}
-.loop .node.bad.on{background:#C25A7C}
-.loop .core{position:absolute;inset:30%;border-radius:50%;display:grid;place-items:center;text-align:center;background:var(--paper);border:2px dashed var(--lav);font-family:"Cormorant Garamond",serif;font-style:italic;font-weight:600;color:var(--muted);font-size:1.1rem;line-height:1.2;padding:8px}
+.photo-quote{position:relative;border-radius:var(--r);overflow:hidden;min-height:380px;background:#cfd4d6 url(assets/ventana.jpg) center/cover;box-shadow:0 40px 70px -40px rgba(42,11,29,.55)}
+.photo-quote::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 35%,rgba(42,11,29,.85))}
+.photo-quote p{position:absolute;left:24px;right:24px;bottom:22px;z-index:1;color:#fff;font-family:var(--serif);font-style:italic;font-weight:600;font-size:clamp(1.5rem,3vw,2.1rem);line-height:1.15}
+.photo-quote p small{display:block;font:700 .74rem var(--display);font-style:normal;letter-spacing:.2em;text-transform:uppercase;color:var(--gold2);margin-bottom:8px}
+.loop{position:relative;width:100%;max-width:420px;aspect-ratio:1;margin:34px auto 0}
 .loop svg{position:absolute;inset:0;width:100%;height:100%}
-.cycle .break{margin-top:22px;background:var(--forest);color:#fff;border-radius:20px;padding:22px 24px;font-size:1.05rem}
-.cycle .break b{color:var(--mint)}
+.loop .node{position:absolute;width:118px;margin-left:-59px;margin-top:-20px;text-align:center;font:700 .84rem var(--display);border-radius:40px;padding:10px 6px;background:var(--lav-l);color:var(--wine);transition:all .45s}
+.loop .node.on{background:var(--lav);color:#fff;transform:scale(1.1);box-shadow:0 12px 26px -8px rgba(178,86,167,.7)}
+.loop .node.bad.on{background:var(--wine)}
+.loop .core{position:absolute;inset:31%;border-radius:50%;display:grid;place-items:center;text-align:center;background:#fff;border:1.5px dashed var(--lav2);font-family:var(--serif);font-style:italic;font-weight:600;color:var(--muted);font-size:1.12rem;line-height:1.15;padding:10px}
+.breaker{margin-top:28px;background:var(--night);color:#fff;border-radius:var(--r);padding:24px 26px;font-size:1.06rem;position:relative;overflow:hidden}
+.breaker::before{content:"";position:absolute;inset:auto -40px -60px auto;width:180px;height:180px;border-radius:50%;background:radial-gradient(rgba(117,211,117,.35),transparent 70%)}
+.breaker b{color:var(--mint)}
 
 /* ES PARA TI */
-.fit{background:linear-gradient(180deg,var(--paper),var(--lav-l))}
-.checks{max-width:720px;margin:34px auto 0;display:grid;gap:12px}
-.check{display:flex;gap:14px;align-items:center;width:100%;text-align:left;background:#fff;border:2px solid var(--line);border-radius:18px;padding:16px 18px;font:700 1.04rem "Nunito Sans",sans-serif;color:var(--ink);cursor:pointer;transition:all .25s}
-.check .box{flex:none;width:30px;height:30px;border-radius:50%;border:2px solid var(--lav);display:grid;place-items:center;color:transparent;font-weight:900;transition:all .25s}
-.check:hover{border-color:var(--lav)}
-.check[aria-pressed="true"]{border-color:var(--mint);background:#F5FCF4}
-.check[aria-pressed="true"] .box{background:var(--mint);border-color:var(--mint);color:var(--forest)}
-.verdict{max-width:720px;margin:20px auto 0;text-align:center;font-family:"Cormorant Garamond",serif;font-style:italic;font-weight:600;font-size:1.5rem;color:var(--purple-d);min-height:2.2em}
-.verdict b{font-family:"Nunito Sans",sans-serif;font-style:normal;font-weight:900;color:var(--olive)}
+.fit{background:linear-gradient(180deg,var(--lav-l),var(--ivory))}
+.fit-grid{display:grid;gap:40px;align-items:center}
+.fit-grid>*{min-width:0}
+.fit-photo{position:relative;border-radius:200px 200px var(--r) var(--r);overflow:hidden;aspect-ratio:4/5;max-width:440px;margin-inline:auto;width:100%;box-shadow:0 40px 70px -40px rgba(42,11,29,.55)}
+.fit-photo img{width:100%;height:100%;object-fit:cover;object-position:center 30%}
+.fit-photo .tag{position:absolute;left:16px;right:16px;bottom:16px;background:rgba(253,251,248,.92);backdrop-filter:blur(8px);border-radius:16px;padding:14px 16px;font-family:var(--serif);font-style:italic;font-weight:600;font-size:1.25rem;color:var(--wine);line-height:1.2}
+.checks{display:grid;gap:10px;margin-top:26px}
+.check{display:flex;gap:14px;align-items:center;width:100%;text-align:left;background:#fff;border:1.5px solid var(--line);border-radius:16px;padding:15px 18px;font:700 1rem "Nunito Sans",sans-serif;color:var(--ink);cursor:pointer;transition:all .25s}
+.check .box{flex:none;width:28px;height:28px;border-radius:50%;border:2px solid var(--lav2);display:grid;place-items:center;transition:all .25s}
+.check .box svg{width:14px;height:14px;opacity:0;transition:opacity .2s}
+.check:hover{border-color:var(--lav2);transform:translateX(4px)}
+.check[aria-pressed="true"]{border-color:var(--mint);background:#F4FBF3}
+.check[aria-pressed="true"] .box{background:var(--mint);border-color:var(--mint)}
+.check[aria-pressed="true"] .box svg{opacity:1}
+.verdict{margin-top:18px;min-height:3.2em;font-family:var(--serif);font-style:italic;font-weight:600;font-size:1.4rem;color:var(--wine);line-height:1.25}
+.verdict b{font:800 1rem var(--display);font-style:normal;color:var(--mint-d);letter-spacing:.02em}
+.fit .after{margin-top:14px;opacity:.35;pointer-events:none;transition:opacity .4s}
+.fit .after.ready{opacity:1;pointer-events:auto}
 
-/* LA BRÚJULA */
-.journey{background:radial-gradient(60% 50% at 0% 0%,rgba(117,211,117,.16),transparent 70%),radial-gradient(50% 50% at 100% 100%,rgba(183,156,219,.18),transparent 70%),var(--forest);color:#F2EFE6}
-.journey h2{color:#fff}.journey h2 em{color:var(--gold)}
+/* EL MÉTODO */
+.journey{background:var(--night);color:#F2EAF0;overflow:hidden}
+.journey::before{content:"";position:absolute;inset:0;background:radial-gradient(50% 40% at 0% 0%,rgba(178,86,167,.35),transparent 70%),radial-gradient(45% 40% at 100% 100%,rgba(117,211,117,.18),transparent 70%);pointer-events:none}
+.journey .wrap{position:relative}
+.journey h2{color:#fff}.journey h2 em{color:var(--gold2)}
 .journey .kicker{color:var(--mint)}
-.journey .lead{color:#C9D3C6}
-.j-grid{display:grid;grid-template-columns:1fr;gap:28px;margin-top:40px}
+.journey .lead{color:#CDBCC8}
+.j-grid{display:grid;gap:26px;margin-top:46px}
 .j-grid>*{min-width:0}
-.compass-wrap{position:sticky;top:70px;z-index:5;display:flex;align-items:center;gap:16px;background:rgba(22,38,26,.92);backdrop-filter:blur(8px);border-radius:20px;padding:10px 14px;border:1px solid rgba(255,255,255,.1)}
-.compass{width:96px;flex:none}
+.compass-wrap{position:sticky;top:70px;z-index:5;display:flex;align-items:center;gap:16px;background:rgba(42,11,29,.9);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-radius:20px;padding:10px 14px;border:1px solid rgba(255,255,255,.1)}
+.compass{width:88px;flex:none}
 .compass .needle{transform-origin:100px 100px;transition:transform .9s cubic-bezier(.5,1.6,.4,1)}
-.compass .lbl{font:900 9px "Nunito Sans",sans-serif;letter-spacing:1px;fill:#7E8F7F;transition:fill .4s}
-.compass .lbl.on{fill:var(--gold)}
-.now small{display:block;font-size:.75rem;letter-spacing:.18em;text-transform:uppercase;color:var(--mint);font-weight:900}
-.now b{font-family:"Playfair Display",serif;font-size:1.3rem;color:#fff;display:block;line-height:1.2}
-.now span{font-family:"Cormorant Garamond",serif;font-style:italic;color:var(--gold-l);font-size:1.1rem}
-.steps{display:grid;gap:22px}
-.step{position:relative;border-radius:24px;padding:28px 24px;background:var(--forest-2);border:1px solid rgba(255,255,255,.08);opacity:.6;transform:scale(.98);transition:all .5s ease}
-.step.lit,.no-js .step{opacity:1;transform:none;background:#25432C;border-color:var(--gold);box-shadow:0 0 0 1px var(--gold),0 0 50px rgba(217,180,95,.28),0 0 90px rgba(117,211,117,.18)}
-.step .top-row{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
-.step .wk{font-size:.78rem;font-weight:900;letter-spacing:.16em;text-transform:uppercase;color:var(--mint)}
-.step .dir{font-family:"Playfair Display",serif;font-weight:900;font-size:clamp(1.8rem,5vw,2.4rem);color:#fff;letter-spacing:.04em;line-height:1}
-.step.lit .dir{color:var(--gold)}
-.step .q{font-family:"Cormorant Garamond",serif;font-style:italic;font-weight:600;font-size:1.45rem;color:var(--gold-l);margin-top:8px;line-height:1.25}
-.step p{color:#DCE3D8;margin-top:10px;font-size:1.02rem}
+.compass .lbl{font:800 9px var(--display);letter-spacing:1px;fill:#8d7686;transition:fill .4s}
+.compass .lbl.on{fill:var(--gold2)}
+.now small{display:block;font:800 .72rem var(--display);letter-spacing:.2em;text-transform:uppercase;color:var(--mint)}
+.now b{font:900 1.3rem/1.1 var(--display);color:#fff;display:block;letter-spacing:.04em}
+.now span{font-family:var(--serif);font-style:italic;color:var(--gold2);font-size:1.12rem;line-height:1.2;display:block}
+.steps{display:grid;gap:18px}
+.step{position:relative;border-radius:var(--r);padding:28px 24px 24px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);opacity:.55;transition:all .5s ease;overflow:hidden}
+.step::after{content:attr(data-n);position:absolute;right:14px;top:-18px;font:900 7rem/1 var(--display);color:rgba(255,255,255,.05);pointer-events:none}
+.step.lit,.no-js .step{opacity:1;background:linear-gradient(160deg,rgba(178,86,167,.22),rgba(255,255,255,.04));border-color:rgba(231,211,166,.6);box-shadow:0 30px 60px -30px rgba(0,0,0,.6)}
+.step .wk{font:800 .74rem var(--display);letter-spacing:.2em;text-transform:uppercase;color:var(--mint)}
+.step .dir{font:900 clamp(1.9rem,5vw,2.6rem)/1 var(--display);color:#fff;letter-spacing:.03em;margin-top:6px}
+.step.lit .dir{color:var(--gold2)}
+.step .q{font-family:var(--serif);font-style:italic;font-weight:600;font-size:1.45rem;color:#F0D9EC;margin-top:8px;line-height:1.2}
+.step p{color:#D8C9D3;margin-top:10px;font-size:1rem}
 .step .tools{display:grid;gap:8px;margin-top:16px}
-.step .t{display:grid;grid-template-columns:auto 1fr;gap:10px;background:rgba(255,255,255,.06);border-radius:14px;padding:11px 14px;font-size:.97rem;color:#F2EFE6}
-.step .t b{color:var(--mint)}
-.step .t.out b{color:var(--gold)}
+.step .t{display:grid;grid-template-columns:auto 1fr;gap:10px;background:rgba(255,255,255,.06);border-radius:12px;padding:10px 14px;font-size:.95rem;color:#F2EAF0}
+.step .t b{color:var(--mint);font-family:var(--display);font-weight:700}
+.step .t.out b{color:var(--gold2)}
 
-/* reencuadre */
-.reframe{padding-block:64px;background:var(--paper)}
-.reframe blockquote{max-width:820px;margin:0 auto;text-align:center;font-family:"Cormorant Garamond",serif;font-style:italic;font-weight:600;font-size:clamp(1.6rem,4vw,2.4rem);line-height:1.25;color:var(--purple-d)}
-.reframe blockquote b{font-family:"Playfair Display",serif;font-style:normal;color:var(--olive)}
+/* frase con foto completa */
+.reframe{color:#fff;text-align:center;padding-block:120px;overflow:hidden;isolation:isolate}
+.reframe .bg{position:absolute;inset:-12% 0;z-index:-2;background:url(assets/diario.jpg) center 40%/cover;will-change:transform}
+.reframe::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(42,11,29,.78),rgba(78,26,56,.82))}
+.reframe blockquote{max-width:880px;margin:0 auto;font-family:var(--serif);font-style:italic;font-weight:500;font-size:clamp(1.8rem,4.4vw,3rem);line-height:1.18}
+.reframe blockquote b{font:800 .9em var(--display);font-style:normal;color:var(--mint);letter-spacing:-.01em}
+.reframe .by{margin-top:22px;font:700 .8rem var(--display);letter-spacing:.24em;text-transform:uppercase;color:var(--gold2)}
 
-/* resultados */
-.results{background:#fff}
-.res{display:grid;grid-template-columns:1fr;gap:14px;margin-top:36px}
-.res li{list-style:none;display:flex;gap:14px;align-items:flex-start;background:var(--paper);border:2px solid var(--line);border-radius:18px;padding:18px 20px;transition:all .45s}
-.res li.lit{border-color:var(--mint);background:#F5FCF4;transform:translateY(-3px);box-shadow:0 14px 30px -18px rgba(69,166,72,.6)}
-.res .n{flex:none;width:40px;height:40px;border-radius:12px;background:var(--purple);color:#fff;display:grid;place-items:center;font-family:"Playfair Display",serif;font-weight:900}
-.res li.lit .n{background:var(--mint);color:var(--forest)}
-.res b{display:block;font-size:1.08rem;color:var(--purple-d)}
-.res span{color:var(--muted);font-size:.96rem}
+/* IMAGÍNATE */
+.vision{background:var(--ivory)}
+.v-grid{display:grid;gap:18px;margin-top:44px}
+.v-card{position:relative;border-radius:var(--r);overflow:hidden;min-height:430px;color:#fff;display:flex;align-items:flex-end;isolation:isolate;box-shadow:0 30px 60px -36px rgba(42,11,29,.6)}
+.v-card img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;transition:transform 1.2s ease}
+.v-card:hover img{transform:scale(1.06)}
+.v-card::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,transparent 30%,rgba(42,11,29,.92))}
+.v-card div{padding:24px}
+.v-card small{font:800 .72rem var(--display);letter-spacing:.2em;text-transform:uppercase;color:var(--mint)}
+.v-card h3{font-family:var(--serif);font-style:italic;font-weight:600;font-size:1.75rem;line-height:1.12;margin-top:6px}
+.res{display:grid;gap:12px;margin-top:40px;list-style:none}
+.res li{display:flex;gap:14px;align-items:flex-start;background:#fff;border:1.5px solid var(--line);border-radius:18px;padding:18px 20px;transition:all .45s}
+.res li.lit{border-color:var(--mint);transform:translateY(-3px);box-shadow:0 18px 34px -22px rgba(47,122,51,.6)}
+.res .n{flex:none;width:40px;height:40px;border-radius:12px;background:var(--lav-l);color:var(--lav);display:grid;place-items:center;font:900 1rem var(--display);transition:all .45s}
+.res li.lit .n{background:var(--mint);color:#0f2e12}
+.res b{display:block;font:700 1.05rem var(--display);color:var(--wine)}
+.res span{color:var(--muted);font-size:.95rem}
 
-/* incluye */
-.inc{display:grid;grid-template-columns:1fr;gap:16px;margin-top:36px}
-.inc div{background:#fff;border-radius:20px;padding:22px;border-bottom:4px solid var(--lav);box-shadow:0 8px 24px -16px rgba(74,40,115,.35)}
-.inc div:nth-child(even){border-bottom-color:var(--mint)}
-.inc .ic{font-size:1.9rem}
-.inc b{display:block;font-size:1.08rem;margin-top:6px;color:var(--purple-d)}
-.inc span{color:var(--muted);font-size:.95rem}
+/* QUÉ INCLUYE */
+.incl{background:var(--cream)}
+.inc-grid{display:grid;gap:40px;align-items:center}
+.inc-grid>*{min-width:0}
+.book{position:relative;max-width:500px;margin-inline:auto;width:100%}
+.book img{width:100%;border-radius:20px;box-shadow:0 44px 80px -36px rgba(42,11,29,.6);animation:bob 8s ease-in-out infinite}
+.book .stamp{position:absolute;left:-8px;bottom:9%;background:var(--night);color:#fff;border-radius:18px;padding:14px 18px;box-shadow:0 18px 34px rgba(0,0,0,.3);font:700 .84rem/1.3 var(--display);transform:rotate(-4deg)}
+.book .stamp b{display:block;font-family:var(--serif);font-style:italic;font-weight:600;font-size:1.35rem;color:var(--gold2)}
+.inc{display:grid;gap:0;margin-top:26px;counter-reset:inc}
+.inc div{display:grid;grid-template-columns:52px 1fr;gap:4px 14px;padding:18px 0;border-top:1px solid #E2D6CA}
+.inc div:last-child{border-bottom:1px solid #E2D6CA}
+.inc div::before{counter-increment:inc;content:counter(inc,decimal-leading-zero);grid-row:span 2;font:900 1.5rem/1 var(--display);color:var(--lav);padding-top:2px}
+.inc b{font:700 1.06rem var(--display);color:var(--wine)}
+.inc span{color:var(--muted);font-size:.96rem}
 
-/* comparación */
-.which{background:var(--lav-l)}
-.vs{display:grid;grid-template-columns:1fr;gap:18px;margin-top:34px}
-.vs>div{border-radius:24px;padding:28px 24px;background:#fff;border:2px solid var(--line)}
-.vs .me{border-color:var(--purple);box-shadow:0 20px 40px -24px rgba(107,63,160,.6);position:relative}
-.vs .me::before{content:"ESTÁS AQUÍ";position:absolute;top:-13px;left:24px;background:var(--purple);color:#fff;font-size:.72rem;font-weight:900;letter-spacing:.12em;padding:5px 12px;border-radius:20px}
-.vs h3{font-size:1.7rem;color:var(--purple-d);letter-spacing:.04em}
-.vs .len{font-weight:900;color:var(--olive);font-size:.92rem;letter-spacing:.06em;text-transform:uppercase}
-.vs p{color:var(--muted);margin-top:8px;font-size:1rem}
-.vs ul{list-style:none;margin-top:12px;display:grid;gap:6px;font-size:.98rem}
-.vs li::before{content:"→ ";color:var(--olive);font-weight:900}
-.vs a{display:inline-block;margin-top:14px;font-weight:900;color:var(--purple)}
+/* COMPARACIÓN */
+.which{background:var(--ivory)}
+.vs{display:grid;gap:18px;margin-top:40px}
+.vs>div{border-radius:var(--r);padding:30px 26px;background:#fff;border:1.5px solid var(--line);position:relative}
+.vs .me{background:var(--night);color:#fff;border-color:var(--night);box-shadow:0 30px 60px -30px rgba(42,11,29,.7)}
+.vs .me::before{content:"ESTÁS AQUÍ";position:absolute;top:-13px;left:26px;background:var(--mint);color:#0f2e12;font:900 .7rem var(--display);letter-spacing:.14em;padding:6px 12px;border-radius:20px}
+.vs h3{font:900 1.8rem var(--display);letter-spacing:.05em;color:var(--wine)}
+.vs .me h3{color:#fff}
+.vs .len{font:700 .82rem var(--display);color:var(--lav);letter-spacing:.12em;text-transform:uppercase;margin-top:2px}
+.vs .me .len{color:var(--mint)}
+.vs p{color:var(--muted);margin-top:10px;font-size:1rem}
+.vs .me p{color:#D8C9D3}
+.vs ul{list-style:none;margin-top:14px;display:grid;gap:8px;font-size:.98rem}
+.vs li{display:flex;gap:10px}
+.vs li::before{content:"";flex:none;width:8px;height:8px;border-radius:50%;background:var(--lav);margin-top:.6em}
+.vs .me li::before{background:var(--mint)}
+.vs a{display:inline-flex;margin-top:16px;font:800 .95rem var(--display);color:var(--lav);text-decoration:none}
 
-/* coach */
-.coach-card{display:grid;grid-template-columns:1fr;gap:26px;align-items:center;background:#fff;border-radius:28px;padding:32px 24px;box-shadow:0 20px 50px -30px rgba(74,40,115,.45)}
-.coach-card>*{min-width:0}
-.coach-card img{width:180px;height:180px;border-radius:50%;object-fit:cover;justify-self:center;border:5px solid var(--mint-l);box-shadow:0 0 0 2px var(--mint)}
-.coach-card h3{font-size:2rem;color:var(--purple-d)}
-.coach-card .role{font-weight:900;font-size:.82rem;letter-spacing:.14em;text-transform:uppercase;color:var(--olive);margin-top:4px}
-.coach-card p{color:var(--muted);margin-top:12px}
-.coach-card blockquote{margin-top:16px;font-family:"Cormorant Garamond",serif;font-style:italic;font-weight:600;font-size:1.45rem;color:var(--purple);line-height:1.3}
+/* COACH */
+.coach{background:var(--lav-l);overflow:hidden}
+.coach-grid{display:grid;gap:40px;align-items:center}
+.coach-grid>*{min-width:0}
+.portrait{position:relative;max-width:460px;width:100%;margin-inline:auto}
+.portrait img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:center 20%;border-radius:var(--r);box-shadow:0 40px 70px -40px rgba(42,11,29,.6)}
+.portrait::before{content:"";position:absolute;inset:-14px 14px 14px -14px;border:1.5px solid var(--lav2);border-radius:var(--r);z-index:-1}
+.portrait .sig{position:absolute;right:-6px;bottom:22px;background:#fff;border-radius:16px;padding:12px 16px;box-shadow:0 18px 34px -16px rgba(42,11,29,.4);font:800 1.5rem/1 var(--display);color:var(--wine)}
+.portrait .sig small{display:block;font:600 .74rem var(--display);letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-top:4px}
+.coach h3{font:800 clamp(2rem,4vw,2.7rem)/1.05 var(--display);color:var(--wine);margin-top:14px}
+.coach .role{font:700 .82rem var(--display);letter-spacing:.16em;text-transform:uppercase;color:var(--lav);margin-top:8px}
+.coach p{color:var(--muted);margin-top:14px}
+.coach blockquote{margin-top:20px;padding-left:18px;border-left:3px solid var(--mint);font-family:var(--serif);font-style:italic;font-weight:600;font-size:1.5rem;color:var(--wine);line-height:1.25}
+.mosaic{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:46px}
+.mosaic figure{position:relative;border-radius:16px;overflow:hidden;aspect-ratio:4/3}
+.mosaic img{width:100%;height:100%;object-fit:cover;transition:transform 1s}
+.mosaic figure:hover img{transform:scale(1.05)}
+.mosaic figcaption{position:absolute;left:0;right:0;bottom:0;padding:26px 12px 10px;background:linear-gradient(transparent,rgba(42,11,29,.85));color:#fff;font:600 .8rem var(--display);letter-spacing:.02em}
 
-/* inversión */
-.invest{background:radial-gradient(60% 60% at 50% 0%,rgba(183,156,219,.35),transparent 70%),var(--paper)}
-.pcard{max-width:600px;margin:34px auto 0;background:#fff;border-radius:28px;padding:36px 26px 28px;text-align:center;border:2px solid var(--purple);box-shadow:0 30px 60px -30px rgba(107,63,160,.6)}
-.pcard .name{font-family:"Playfair Display",serif;font-weight:900;font-size:2.2rem;letter-spacing:.06em;color:var(--purple)}
-.pcard .len{font-weight:900;color:var(--olive);letter-spacing:.08em;text-transform:uppercase;font-size:.9rem}
-.pcard .amount{font-family:"Playfair Display",serif;font-weight:900;font-size:3.6rem;color:var(--purple-d);line-height:1.1;margin-top:10px}
-.pcard .ask{font-family:"Cormorant Garamond",serif;font-style:italic;font-weight:600;font-size:1.4rem;color:var(--purple-d);margin-top:12px}
-.pcard .per{color:var(--muted);font-size:.95rem}
-.pcard ul{list-style:none;text-align:left;max-width:380px;margin:20px auto 24px;display:grid;gap:8px;font-size:1rem}
-.pcard li::before{content:"✓";display:inline-grid;place-items:center;width:22px;height:22px;border-radius:50%;background:var(--mint-l);color:var(--olive);font-weight:900;font-size:.8rem;margin-right:10px}
-.seg{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-bottom:14px}
-.seg button{border:2px solid var(--line);background:#fff;color:var(--purple-d);border-radius:30px;padding:8px 16px;font:800 .9rem "Nunito Sans",sans-serif;cursor:pointer}
-.seg button.on{background:var(--purple);border-color:var(--purple);color:#fff}
-.small{font-size:.82rem;color:var(--muted);margin-top:8px}
-.or{margin:16px 0 6px;color:var(--muted);font-size:.8rem;font-weight:900;letter-spacing:.14em;text-transform:uppercase}
-.zelle{margin-top:18px;border-top:2px dashed var(--line);padding-top:20px}
-.zelle img{width:200px;margin:12px auto 6px;border-radius:14px;border:2px solid var(--mint-l)}
+/* AGENDA TU CITA */
+.book-sec{color:#fff;overflow:hidden;isolation:isolate;padding-block:100px}
+.book-sec .bg{position:absolute;inset:0;z-index:-2;background:url(assets/cima.jpg) 72% 18%/cover}
+.book-sec::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(42,11,29,.45),rgba(42,11,29,.72) 45%,rgba(42,11,29,.94) 85%),radial-gradient(50% 40% at 0% 0%,rgba(178,86,167,.35),transparent 70%)}
+.book-sec h2{color:#fff}.book-sec h2 em{color:var(--gold2)}
+.book-sec .kicker{color:var(--mint)}
+.book-sec .lead{color:#EADCE6}
+.bk-grid{display:grid;gap:30px;margin-top:40px;align-items:start}
+.bk-grid>*{min-width:0}
+.how{display:grid;gap:12px;list-style:none}
+.how li{display:grid;grid-template-columns:52px 1fr;gap:2px 14px;background:rgba(42,11,29,.5);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,.14);border-radius:18px;padding:18px}
+.how li i{grid-row:span 2;width:44px;height:44px;border-radius:50%;display:grid;place-items:center;background:var(--mint);color:#0f2e12;font:900 1.1rem var(--display);font-style:normal}
+.how b{font:700 1.08rem var(--display)}
+.how span{color:#D8C9D3;font-size:.95rem}
+.card{background:var(--ivory);color:var(--ink);border-radius:26px;padding:30px 24px;box-shadow:0 50px 90px -40px rgba(0,0,0,.7)}
+.card .ttl{font:900 1.6rem/1.1 var(--display);color:var(--wine)}
+.card .free{display:inline-block;margin-top:8px;background:var(--mint-l);color:var(--mint-d);font:800 .78rem var(--display);letter-spacing:.12em;text-transform:uppercase;padding:6px 12px;border-radius:20px}
+.form{display:grid;gap:12px;margin-top:18px}
+.form label{display:grid;gap:5px;font:700 .82rem var(--display);color:var(--wine);letter-spacing:.02em}
+.form input,.form select,.form textarea{font:inherit;font-size:1rem;padding:13px 14px;border:1.5px solid var(--line);border-radius:14px;background:#fff;color:var(--ink);width:100%}
+.form textarea{min-height:76px;resize:vertical}
+.form input:focus,.form select:focus,.form textarea:focus{outline:none;border-color:var(--lav)}
+.seg2{display:flex;flex-wrap:wrap;gap:8px}
+.seg2 input{position:absolute;opacity:0;pointer-events:none}
+.seg2 label{display:inline-block;cursor:pointer;border:1.5px solid var(--line);background:#fff;border-radius:30px;padding:9px 14px;font:700 .86rem var(--display);color:var(--wine)}
+.seg2 input:checked+label{background:var(--lav);border-color:var(--lav);color:#fff}
+.seg2 input:focus-visible+label{outline:3px solid var(--gold);outline-offset:2px}
+.fl{font:700 .82rem var(--display);color:var(--wine);margin-bottom:-4px}
+.small{font-size:.82rem;color:var(--muted);margin-top:10px;text-align:center}
+.alt-links{display:flex;flex-wrap:wrap;justify-content:center;gap:6px 16px;margin-top:14px;font:700 .88rem var(--display)}
+.alt-links a{color:var(--lav);text-decoration:none}
+/* inversión (si hay precio en config.js) */
+.price{margin-top:22px;border-top:1.5px dashed var(--line);padding-top:20px;text-align:center}
+.price .amount{font:900 3rem/1.1 var(--display);color:var(--wine)}
+.price .per{color:var(--muted);font-size:.92rem}
+.or{margin:16px 0 8px;color:var(--muted);font:800 .74rem var(--display);letter-spacing:.16em;text-transform:uppercase}
+.seg{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-bottom:12px}
+.seg button{border:1.5px solid var(--line);background:#fff;color:var(--wine);border-radius:30px;padding:8px 16px;font:700 .88rem var(--display);cursor:pointer}
+.seg button.on{background:var(--lav);border-color:var(--lav);color:#fff}
+.zelle{margin-top:16px;padding-top:16px;border-top:1.5px dashed var(--line)}
+.zelle img{width:180px;margin:12px auto 6px;border-radius:14px}
 .code{display:inline-flex;gap:8px;align-items:center;flex-wrap:wrap;justify-content:center;margin-top:8px;font-size:.9rem}
-.code b{background:var(--lav-l);color:var(--purple-d);padding:4px 12px;border-radius:10px;letter-spacing:1px;user-select:all}
-.code button{border:1px solid var(--line);background:#fff;border-radius:20px;padding:4px 12px;font:700 .8rem "Nunito Sans",sans-serif;cursor:pointer;color:var(--purple)}
-.form{display:grid;gap:12px;text-align:left;margin-top:16px}
-.form label{font-size:.85rem;font-weight:900;color:var(--purple-d);display:grid;gap:4px}
-.form input{font:inherit;font-size:1rem;padding:12px 14px;border:2px solid var(--line);border-radius:14px;background:var(--paper);color:var(--ink);width:100%}
-.form input:focus{outline:none;border-color:var(--mint)}
+.code b{background:var(--lav-l);color:var(--wine);padding:4px 12px;border-radius:10px;letter-spacing:1px;user-select:all}
+.code button{border:1px solid var(--line);background:#fff;border-radius:20px;padding:4px 12px;font:700 .8rem var(--display);cursor:pointer;color:var(--lav)}
 
-/* preguntas */
-.faq details{max-width:760px;margin:0 auto 12px;background:#fff;border-radius:18px;padding:4px 22px;border:2px solid var(--line)}
-.faq details[open]{border-color:var(--mint)}
-.faq summary{list-style:none;cursor:pointer;font-weight:900;padding:16px 0;display:flex;justify-content:space-between;gap:12px;color:var(--purple-d)}
+/* PREGUNTAS */
+.faq{background:var(--ivory)}
+.faq details{max-width:780px;margin:0 auto 10px;background:#fff;border-radius:18px;padding:2px 22px;border:1.5px solid var(--line);transition:border-color .3s}
+.faq details[open]{border-color:var(--lav2)}
+.faq summary{list-style:none;cursor:pointer;font:700 1.04rem var(--display);padding:18px 0;display:flex;justify-content:space-between;align-items:center;gap:12px;color:var(--wine)}
 .faq summary::-webkit-details-marker{display:none}
-.faq summary::after{content:"+";color:var(--olive);font-size:1.4rem;line-height:1}
-.faq details[open] summary::after{content:"–"}
-.faq details p{padding-bottom:16px;color:var(--muted);font-size:1rem}
+.faq summary::after{content:"";flex:none;width:12px;height:12px;border-right:2px solid var(--lav);border-bottom:2px solid var(--lav);transform:rotate(45deg) translateY(-3px);transition:transform .3s}
+.faq details[open] summary::after{transform:rotate(-135deg) translateY(-3px)}
+.faq details p{padding-bottom:18px;color:var(--muted);font-size:1rem}
 
-/* cierre */
-.final{text-align:center;color:#fff;padding-block:70px;background:radial-gradient(70% 90% at 50% 0%,#3B6B44,var(--forest))}
-.final h2{color:#fff;font-size:clamp(2.2rem,6vw,3.6rem)}
-.final p{font-family:"Cormorant Garamond",serif;font-style:italic;font-weight:600;font-size:1.5rem;color:var(--gold-l);margin:12px auto 28px;max-width:30ch}
-footer{background:var(--purple-d);color:#fff;text-align:center;padding:40px 20px 100px;font-size:.92rem}
-footer .brand{font-family:"Playfair Display",serif;font-weight:700;letter-spacing:.1em}
-footer .links{display:flex;flex-wrap:wrap;gap:16px;justify-content:center;margin:14px 0}
-footer a{color:#fff;text-decoration:none;font-weight:700}
+/* CIERRE */
+.final{text-align:center;color:#fff;padding-block:90px;background:radial-gradient(70% 90% at 50% 0%,var(--wine2),var(--night));overflow:hidden}
+.final h2{color:#fff;font-size:clamp(2.4rem,7vw,4.6rem)}
+.final p{font-family:var(--serif);font-style:italic;font-weight:500;font-size:1.6rem;color:var(--gold2);margin:12px auto 30px;max-width:30ch;line-height:1.25}
 
-.mbar{position:fixed;left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom,0px));z-index:55;display:flex;align-items:center;justify-content:space-between;gap:10px;background:var(--forest);color:#fff;border-radius:20px;padding:10px 10px 10px 18px;box-shadow:0 12px 30px rgba(0,0,0,.3);transform:translateY(160%);transition:transform .3s}
+/* PIE */
+footer{background:var(--night);color:#D8C9D3;padding:60px 0 120px;border-top:1px solid rgba(255,255,255,.08)}
+.f-grid{display:grid;gap:34px}
+.f-brand img{height:64px;width:auto}
+.f-brand small{display:block;font-family:var(--serif);font-style:italic;font-weight:600;font-size:1.15rem;color:var(--gold2);margin:4px 0 0 4px}
+.f-brand p{margin-top:16px;font-family:var(--serif);font-style:italic;font-size:1.2rem;color:#EADCE6;max-width:34ch;line-height:1.3}
+footer h4{font:800 .76rem var(--display);letter-spacing:.2em;text-transform:uppercase;color:var(--mint);margin-bottom:14px}
+footer ul{list-style:none;display:grid;gap:8px;font-size:.96rem}
+footer a{color:#fff;text-decoration:none}
+footer a:hover{color:var(--mint)}
+.soc{display:flex;gap:10px;margin-top:4px}
+.soc a{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;border:1px solid rgba(255,255,255,.22);transition:all .25s}
+.soc a:hover{background:var(--lav);border-color:var(--lav)}
+.soc svg{width:19px;height:19px;fill:#fff}
+.f-bottom{margin-top:40px;padding-top:22px;border-top:1px solid rgba(255,255,255,.1);display:flex;flex-wrap:wrap;gap:8px 20px;justify-content:space-between;font-size:.8rem;color:#A9929F}
+
+/* barra fija en móvil */
+.mbar{position:fixed;left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom,0px));z-index:55;display:flex;align-items:center;justify-content:space-between;gap:10px;background:var(--night);color:#fff;border-radius:20px;padding:10px 10px 10px 18px;box-shadow:0 14px 34px rgba(0,0,0,.35);border:1px solid rgba(255,255,255,.12);transform:translateY(170%);transition:transform .35s}
 .mbar.show{transform:none}
-.mbar b{font-family:"Playfair Display",serif;letter-spacing:.06em}
-.mbar small{display:block;font-size:.75rem;color:#C9D3C6}
-.mbar a{background:var(--mint);color:var(--forest);text-decoration:none;font-weight:900;padding:11px 16px;border-radius:30px;font-size:.88rem;white-space:nowrap}
+.mbar b{font:900 1rem var(--display);letter-spacing:.06em}
+.mbar small{display:block;font-size:.74rem;color:#CDBCC8}
+.mbar a{background:var(--mint);color:#0f2e12;text-decoration:none;font:800 .86rem var(--display);padding:12px 16px;border-radius:30px;white-space:nowrap}
 
-.js .reveal{opacity:0;transform:translateY(26px);transition:opacity .8s,transform .8s}
+.js .reveal{opacity:0;transform:translateY(30px);transition:opacity .9s ease,transform .9s ease}
 .js .reveal.in{opacity:1;transform:none}
+.js .reveal.d1{transition-delay:.12s}.js .reveal.d2{transition-delay:.24s}
 
-@media (min-width:760px){
-  body{font-size:20px}
-  .hero{padding-block:64px 80px}
-  .hero-grid{grid-template-columns:1.1fr .9fr;grid-template-areas:"top book" "bot book";gap:22px 48px;align-content:center}
-  .cycle-grid{grid-template-columns:1fr 1fr;gap:56px}
+@media (min-width:640px){
+  .hero .facts{grid-template-columns:repeat(4,1fr)}
+  .hide-s{display:inline}
+  .v-grid{grid-template-columns:repeat(3,1fr)}
+  .mosaic{grid-template-columns:repeat(4,1fr)}
   .res{grid-template-columns:1fr 1fr}
-  .inc{grid-template-columns:repeat(3,1fr)}
-  .vs{grid-template-columns:1fr 1fr}
-  .coach-card{grid-template-columns:200px 1fr;padding:40px 44px}
-  .coach-card img{width:200px;height:200px}
-  .mbar{display:none}
 }
-@media (min-width:980px){
-  .j-grid{grid-template-columns:330px 1fr;gap:48px;align-items:start}
-  .compass-wrap{flex-direction:column;align-items:center;text-align:center;padding:26px;top:90px}
-  .compass{width:240px}
+@media (min-width:860px){
+  body{font-size:19px}
+  .pad{padding-block:110px}
+  .nav ul{display:flex}
+  .hide-s{display:none}
+.scrollcue{display:block}
+  .hero .wrap{padding-bottom:72px}
+  .cycle-grid{grid-template-columns:.95fr 1.05fr;gap:64px}
+  .photo-quote{min-height:620px}
+  .fit-grid{grid-template-columns:.85fr 1.15fr;gap:70px}
+  .inc-grid{grid-template-columns:1fr 1fr;gap:70px}
+  .vs{grid-template-columns:1fr 1fr}
+  .coach-grid{grid-template-columns:.9fr 1.1fr;gap:70px}
+  .bk-grid{grid-template-columns:1fr 1fr;gap:50px}
+  .card{padding:36px 34px}
+  .f-grid{grid-template-columns:1.4fr 1fr 1fr 1fr}
+  .mbar{display:none}
+  footer{padding-bottom:50px}
+}
+@media (min-width:1000px){
+  .j-grid{grid-template-columns:320px 1fr;gap:50px;align-items:start}
+  .compass-wrap{flex-direction:column;align-items:center;text-align:center;padding:28px;top:96px}
+  .compass{width:230px}
   .now b{font-size:1.8rem}
 }
-@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.js .reveal{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.js .reveal{opacity:1;transform:none}html{scroll-behavior:auto}}
 </style>
 </head>
 <body class="no-js">
 <div class="readbar" id="readbar"></div>
 
-<header class="top">
+<header class="nav" id="nav">
   <div class="wrap">
-    <img src="assets/logo.png" alt="Mindful Wellness &amp; Coaching">
-    <a class="btn go" href="#empezar">Quiero mi impulso</a>
+    <a class="brand" href="https://www.mindfulbymonica.com/" aria-label="Mindful Wellness by Monica V. — inicio">
+      <img class="on-dark" src="assets/logo-light.png" alt="Mindful Wellness">
+      <img class="on-light" src="assets/logo-color.png" alt="Mindful Wellness">
+      <small>by Monica V.</small>
+    </a>
+    <ul>
+      <li><a href="#ciclo">¿Te suena?</a></li>
+      <li><a href="#metodo">El método</a></li>
+      <li><a href="#incluye">Qué incluye</a></li>
+      <li><a href="#coach">Tu coach</a></li>
+      <li><a href="#preguntas">Preguntas</a></li>
+    </ul>
+    <a class="btn mint" href="#agenda">Agenda tu cita</a>
   </div>
 </header>
 
 <!-- HERO -->
-<section class="hero">
-  <div class="wrap hero-grid">
-    <div class="h-top">
-      <p class="hook">¿Empezaste algo con toda la ilusión… y se quedó a medias?</p>
-      <h1>IMPULSO</h1>
-      <p class="promise">5 semanas para <mark>recuperar tu confianza</mark>, crear claridad y <mark>volver a avanzar</mark>.</p>
+<section class="hero" id="top">
+  <div class="bg" aria-hidden="true"></div>
+  <div class="wrap">
+    <span class="flag"><i></i>Programa bandera<span class="hide-s">&nbsp;· Mindful Wellness</span></span>
+    <p class="hook">¿Empezaste algo con toda la ilusión… y se quedó a medias?</p>
+    <h1 aria-label="IMPULSO" id="h1"><span>I</span><span>M</span><span>P</span><span>U</span><span>L</span><span>S</span><span>O</span></h1>
+    <p class="promise">5 semanas para <b>recuperar tu confianza</b>, crear claridad y <b>volver a avanzar</b> en ese proyecto que llevas en el corazón.</p>
+    <div class="actions">
+      <a class="btn mint pulse" href="#agenda">Agenda tu conversación gratuita <span class="arr">→</span></a>
+      <a class="btn line" href="#metodo">Descubre el método</a>
     </div>
-    <div class="h-bot">
-      <p class="sub">Tu guía para transformar tus ideas en acciones. Mentoría individual con Monica Villalba para que retomes tu proyecto y, esta vez, lo sostengas.</p>
-      <div class="actions">
-        <a class="btn go" href="#empezar">Quiero recuperar mi impulso →</a>
-        <a class="btn ghost" href="#para-ti">¿Es para mí?</a>
-      </div>
-      <div class="chips">
-        <span><b>5</b> semanas</span><span><b>5</b> sesiones 1:1</span><span>Workbook exclusivo</span><span>Plan de <b>90</b> días</span>
-      </div>
-    </div>
-    <div class="book">
-      <img src="assets/impulso.jpg" alt="Workbook IMPULSO: Confía contigo. Creo en ti. Avanza con propósito.">
-      <div class="stamp"><b>¡Tu momento es ahora!</b>Confía en ti · Avanza con propósito</div>
+    <div class="facts">
+      <div><b>5</b><span>semanas de acompañamiento</span></div>
+      <div><b>5</b><span>sesiones de 60 minutos</span></div>
+      <div><b>1</b><span>workbook IMPULSO exclusivo</span></div>
+      <div><b>90</b><span>días de plan para sostenerlo</span></div>
     </div>
   </div>
+  <span class="scrollcue" aria-hidden="true">Desliza</span>
 </section>
 
+<div class="marquee" aria-hidden="true">
+  <div class="track">
+    <span>Confía en ti</span><span>Avanza con propósito</span><span>Mantén el impulso</span><span>Tu momento es ahora</span><span>Todo es posible</span>
+    <span>Confía en ti</span><span>Avanza con propósito</span><span>Mantén el impulso</span><span>Tu momento es ahora</span><span>Todo es posible</span>
+  </div>
+</div>
+
 <!-- EL CICLO -->
-<section class="cycle">
+<section class="cycle pad" id="ciclo">
   <div class="wrap cycle-grid">
-    <div class="reveal">
-      <span class="kicker">¿Te suena familiar?</span>
-      <h2>El ciclo que <em>te detiene</em></h2>
-      <p class="lead">Tienes la idea. Empiezas con fuerza. Aparece un obstáculo, haces una pausa… y la frustración te deja esperando “el momento”. Luego vuelves a empezar desde cero.</p>
-      <div class="break">No te falta talento ni ganas. <b>Te falta un sistema para mantener el rumbo cuando la motivación baja.</b> Eso es IMPULSO.</div>
+    <div class="photo-quote reveal" role="img" aria-label="Mujer pensativa mirando por una ventana con lluvia">
+      <p><small>Lo que nadie dice en voz alta</small>“El lunes empiezo… esta vez sí.”</p>
     </div>
-    <div class="loop" id="loop" aria-label="Ciclo: ilusión, acción, obstáculo, pausa, frustración, nuevo intento">
-      <svg viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="37" fill="none" stroke="#DCCDEE" stroke-width=".8" stroke-dasharray="2 2"/></svg>
-      <div class="node" style="left:50%;top:13%">✨ Ilusión</div>
-      <div class="node" style="left:82%;top:31%">🚀 Acción</div>
-      <div class="node bad" style="left:82%;top:69%">🧱 Obstáculo</div>
-      <div class="node bad" style="left:50%;top:88%">⏸️ Pausa</div>
-      <div class="node bad" style="left:18%;top:69%">😔 Frustración</div>
-      <div class="node" style="left:18%;top:31%">🔁 Nuevo intento</div>
-      <div class="core">¿Cuántas veces has dado esta vuelta?</div>
+    <div>
+      <div class="reveal">
+        <span class="kicker">¿Te suena familiar?</span>
+        <h2>El ciclo que <em>te detiene</em></h2>
+        <p class="lead">Tienes la idea. Empiezas con fuerza. Aparece un obstáculo, haces una pausa… y la frustración te deja esperando “el momento perfecto”. Después vuelves a empezar desde cero.</p>
+      </div>
+      <div class="loop reveal d1" id="loop" aria-label="Ciclo: ilusión, acción, obstáculo, pausa, frustración, nuevo intento">
+        <svg viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="37" fill="none" stroke="#d59bd0" stroke-width=".7" stroke-dasharray="2 2"/></svg>
+        <div class="node" style="left:50%;top:13%">Ilusión</div>
+        <div class="node" style="left:83%;top:31%">Acción</div>
+        <div class="node bad" style="left:83%;top:69%">Obstáculo</div>
+        <div class="node bad" style="left:50%;top:88%">Pausa</div>
+        <div class="node bad" style="left:17%;top:69%">Frustración</div>
+        <div class="node" style="left:17%;top:31%">Nuevo intento</div>
+        <div class="core">¿Cuántas veces has dado esta vuelta?</div>
+      </div>
+      <div class="breaker reveal d2">No te falta talento ni ganas. <b>Te falta un sistema que te sostenga cuando la motivación baja.</b> Eso es IMPULSO.</div>
     </div>
   </div>
 </section>
 
 <!-- ES PARA TI -->
-<section class="fit" id="para-ti">
-  <div class="wrap center">
-    <div class="reveal">
-      <span class="kicker">Este programa es para ti si…</span>
-      <h2>Marca lo que <em>sientes hoy</em></h2>
+<section class="fit pad" id="para-ti">
+  <div class="wrap fit-grid">
+    <figure class="fit-photo reveal">
+      <img src="assets/para-ti.jpg" alt="Mujer sonriente y tranquila sentada en su sala" loading="lazy">
+      <figcaption class="tag">Este espacio es para ti, tal como eres hoy.</figcaption>
+    </figure>
+    <div>
+      <div class="reveal">
+        <span class="kicker">IMPULSO es para ti si…</span>
+        <h2>Marca lo que <em>sientes hoy</em></h2>
+      </div>
+      <div class="checks" id="checks">
+        <button type="button" class="check" aria-pressed="false"><span class="box"><svg viewBox="0 0 14 14" aria-hidden="true"><path d="M2 7.5l3 3 7-7" fill="none" stroke="#0f2e12" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Quieres emprender o tienes un proyecto en mente</button>
+        <button type="button" class="check" aria-pressed="false"><span class="box"><svg viewBox="0 0 14 14" aria-hidden="true"><path d="M2 7.5l3 3 7-7" fill="none" stroke="#0f2e12" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Quieres recuperar la confianza en ti</button>
+        <button type="button" class="check" aria-pressed="false"><span class="box"><svg viewBox="0 0 14 14" aria-hidden="true"><path d="M2 7.5l3 3 7-7" fill="none" stroke="#0f2e12" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Tienes metas que has dejado pendientes</button>
+        <button type="button" class="check" aria-pressed="false"><span class="box"><svg viewBox="0 0 14 14" aria-hidden="true"><path d="M2 7.5l3 3 7-7" fill="none" stroke="#0f2e12" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Quieres cambiar hábitos y por fin avanzar</button>
+        <button type="button" class="check" aria-pressed="false"><span class="box"><svg viewBox="0 0 14 14" aria-hidden="true"><path d="M2 7.5l3 3 7-7" fill="none" stroke="#0f2e12" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Buscas claridad y propósito</button>
+        <button type="button" class="check" aria-pressed="false"><span class="box"><svg viewBox="0 0 14 14" aria-hidden="true"><path d="M2 7.5l3 3 7-7" fill="none" stroke="#0f2e12" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Deseas construir la vida que sueñas</button>
+      </div>
+      <p class="verdict" id="verdict" aria-live="polite">Toca las frases con las que te identificas.</p>
+      <a class="btn lav after" id="fit-cta" href="#agenda">Sí, quiero mi cita con Mónica <span class="arr">→</span></a>
     </div>
-    <div class="checks" id="checks">
-      <button type="button" class="check" aria-pressed="false"><span class="box">✓</span>Quieres emprender o tienes un proyecto en mente</button>
-      <button type="button" class="check" aria-pressed="false"><span class="box">✓</span>Quieres recuperar tu confianza</button>
-      <button type="button" class="check" aria-pressed="false"><span class="box">✓</span>Tienes metas que has dejado pendientes</button>
-      <button type="button" class="check" aria-pressed="false"><span class="box">✓</span>Quieres cambiar hábitos y avanzar</button>
-      <button type="button" class="check" aria-pressed="false"><span class="box">✓</span>Buscas claridad y propósito</button>
-      <button type="button" class="check" aria-pressed="false"><span class="box">✓</span>Deseas construir la vida que sueñas</button>
-    </div>
-    <p class="verdict" id="verdict" aria-live="polite">Toca las frases con las que te identificas.</p>
   </div>
 </section>
 
-<!-- LA BRÚJULA -->
-<section class="journey" id="programa">
+<!-- EL MÉTODO -->
+<section class="journey pad" id="metodo">
   <div class="wrap">
     <div class="center reveal">
-      <span class="kicker">Tu brújula de 5 semanas</span>
+      <span class="kicker">El método · tu brújula de 5 semanas</span>
       <h2>Una dirección <em>cada semana</em></h2>
-      <p class="lead">IMPULSO no es solo empezar con energía. Es aprender a mantener el rumbo, incluso cuando la motivación cambia. Baja y mira cómo la brújula se mueve contigo.</p>
+      <p class="lead">IMPULSO no es empezar con mucha energía. Es aprender a mantener el rumbo, incluso cuando la motivación cambia. Baja y mira cómo la brújula se mueve contigo.</p>
     </div>
-
     <div class="j-grid">
       <div class="compass-wrap" aria-hidden="true">
         <svg class="compass" viewBox="0 0 200 200">
-          <circle cx="100" cy="100" r="96" fill="#0F1C12" stroke="#D9B45F" stroke-width="2"/>
+          <circle cx="100" cy="100" r="96" fill="#1c0613" stroke="#C9A45C" stroke-width="2"/>
           <circle cx="100" cy="100" r="80" fill="none" stroke="rgba(255,255,255,.12)" stroke-width="1"/>
           <g stroke="rgba(255,255,255,.25)" stroke-width="1.4">
             <line x1="100" y1="22" x2="100" y2="32"/><line x1="100" y1="168" x2="100" y2="178"/>
@@ -363,63 +521,63 @@ footer a{color:#fff;text-decoration:none;font-weight:700}
           <text class="lbl" data-i="3" x="66" y="146" text-anchor="middle">AVANZA</text>
           <text class="lbl" data-i="4" x="50" y="84" text-anchor="middle">SOSTÉN</text>
           <g class="needle" id="needle">
-            <polygon points="100,34 108,100 100,106 92,100" fill="#D9B45F"/>
-            <polygon points="100,166 108,100 100,94 92,100" fill="#B79CDB"/>
+            <polygon points="100,34 108,100 100,106 92,100" fill="#E7D3A6"/>
+            <polygon points="100,166 108,100 100,94 92,100" fill="#b256a7"/>
           </g>
-          <circle cx="100" cy="100" r="7" fill="#75d375" stroke="#0F1C12" stroke-width="2"/>
+          <circle cx="100" cy="100" r="7" fill="#75d375" stroke="#1c0613" stroke-width="2"/>
         </svg>
         <div class="now"><small id="now-w">Semana 1</small><b id="now-d">DESCUBRE</b><span id="now-q">¿Hacia dónde quiero ir?</span></div>
       </div>
 
       <div class="steps">
-        <article class="step" data-i="0" data-q="¿Hacia dónde quiero ir?">
-          <div class="top-row"><span class="wk">Semana 1</span></div>
+        <article class="step" data-i="0" data-n="01" data-q="¿Hacia dónde quiero ir?">
+          <span class="wk">Semana 1</span>
           <div class="dir">DESCUBRE</div>
           <p class="q">¿Hacia dónde quiero ir?</p>
           <p>Hacemos tu radiografía de vida, reconocemos tus fortalezas y eliges una sola prioridad para estas cinco semanas.</p>
           <div class="tools">
-            <div class="t"><b>Herramienta:</b><span>Mi Brújula de IMPULSO y el Diario de Impulso.</span></div>
-            <div class="t out"><b>Te llevas:</b><span>tu prioridad clara y tu primer paso concreto.</span></div>
+            <div class="t"><b>Herramienta</b><span>Mi Brújula de IMPULSO y el Diario de Impulso.</span></div>
+            <div class="t out"><b>Te llevas</b><span>tu prioridad clara y tu primer paso concreto.</span></div>
           </div>
         </article>
-        <article class="step" data-i="1" data-q="¿Qué me desvía del camino?">
-          <div class="top-row"><span class="wk">Semana 2</span></div>
+        <article class="step" data-i="1" data-n="02" data-q="¿Qué me desvía del camino?">
+          <span class="wk">Semana 2</span>
           <div class="dir">COMPRENDE</div>
           <p class="q">¿Qué me desvía del camino?</p>
           <p>Descubrimos el patrón que rompe tu impulso: qué pasa, qué piensas y qué sientes justo antes de soltar.</p>
           <div class="tools">
-            <div class="t"><b>Herramienta:</b><span>El ciclo de la inconstancia y tu registro semanal.</span></div>
-            <div class="t out"><b>Te llevas:</b><span>conciencia de tu patrón y cómo reconocerlo a tiempo.</span></div>
+            <div class="t"><b>Herramienta</b><span>El ciclo de la inconstancia y tu registro semanal.</span></div>
+            <div class="t out"><b>Te llevas</b><span>conciencia de tu patrón y cómo reconocerlo a tiempo.</span></div>
           </div>
         </article>
-        <article class="step" data-i="2" data-q="¿Qué hábitos me acercan a mi meta?">
-          <div class="top-row"><span class="wk">Semana 3</span></div>
+        <article class="step" data-i="2" data-n="03" data-q="¿Qué hábitos me acercan a mi meta?">
+          <span class="wk">Semana 3</span>
           <div class="dir">CONSTRUYE</div>
           <p class="q">¿Qué hábitos me acercan a mi meta?</p>
           <p>Le damos forma concreta a tu proyecto y creamos hábitos que no dependen de la motivación.</p>
           <div class="tools">
-            <div class="t"><b>Herramienta:</b><span>La regla de los 20 minutos, todos los días.</span></div>
-            <div class="t out"><b>Te llevas:</b><span>el objetivo final de tu proyecto y un hábito diario.</span></div>
+            <div class="t"><b>Herramienta</b><span>La regla de los 20 minutos, todos los días.</span></div>
+            <div class="t out"><b>Te llevas</b><span>el objetivo final de tu proyecto y un hábito diario.</span></div>
           </div>
         </article>
-        <article class="step" data-i="3" data-q="¿Qué acción valiente daré hoy?">
-          <div class="top-row"><span class="wk">Semana 4</span></div>
+        <article class="step" data-i="3" data-n="04" data-q="¿Qué acción valiente daré hoy?">
+          <span class="wk">Semana 4</span>
           <div class="dir">AVANZA</div>
           <p class="q">¿Qué acción valiente daré hoy?</p>
           <p>Actúas sin esperar sentirte lista. Reunimos la evidencia de todo lo que ya eres capaz de lograr.</p>
           <div class="tools">
-            <div class="t"><b>Herramienta:</b><span>Tus listas de logros, fortalezas y recursos.</span></div>
-            <div class="t out"><b>Te llevas:</b><span>acciones valientes hechas y avances reales.</span></div>
+            <div class="t"><b>Herramienta</b><span>Tus listas de logros, fortalezas y recursos.</span></div>
+            <div class="t out"><b>Te llevas</b><span>acciones valientes hechas y avances reales.</span></div>
           </div>
         </article>
-        <article class="step" data-i="4" data-q="¿Cómo mantendré el rumbo?">
-          <div class="top-row"><span class="wk">Semana 5</span></div>
+        <article class="step" data-i="4" data-n="05" data-q="¿Cómo mantendré el rumbo?">
+          <span class="wk">Semana 5</span>
           <div class="dir">SOSTÉN</div>
           <p class="q">¿Cómo mantendré el rumbo cuando termine el programa?</p>
           <p>La mentoría termina, pero tu proceso continúa. Creamos el sistema que te sostiene cuando ya no tengas acompañamiento.</p>
           <div class="tools">
-            <div class="t"><b>Herramienta:</b><span>Plan de 90 días: metas, hábitos, revisión semanal y celebraciones.</span></div>
-            <div class="t out"><b>Te llevas:</b><span>tu propio sistema para mantener el impulso.</span></div>
+            <div class="t"><b>Herramienta</b><span>Plan de 90 días: metas, hábitos, revisión semanal y celebraciones.</span></div>
+            <div class="t out"><b>Te llevas</b><span>tu propio sistema para mantener el impulso.</span></div>
           </div>
         </article>
       </div>
@@ -427,130 +585,183 @@ footer a{color:#fff;text-decoration:none;font-weight:700}
   </div>
 </section>
 
-<!-- REENCUADRE -->
+<!-- FRASE -->
 <section class="reframe">
+  <div class="bg" id="parallax" aria-hidden="true"></div>
   <div class="wrap reveal">
-    <blockquote>No buscamos un plan del que no puedas renunciar.<br>Construimos a <b>la mujer que cumple</b> lo que se promete, incluso cuando la motivación baja.</blockquote>
+    <blockquote>No buscamos que nunca te detengas.<br>Construimos a <b>la mujer que cumple</b> lo que se promete, incluso cuando la motivación baja.</blockquote>
+    <p class="by">Mónica Villalba</p>
   </div>
 </section>
 
-<!-- RESULTADOS -->
-<section class="results">
+<!-- IMAGÍNATE -->
+<section class="vision pad">
   <div class="wrap">
     <div class="center reveal">
-      <span class="kicker">Al terminar las 5 semanas</span>
-      <h2>Lo que <em>tendrás en tus manos</em></h2>
+      <span class="kicker">Cierra los ojos un momento</span>
+      <h2>Imagínate dentro de <em>5 semanas</em></h2>
+    </div>
+    <div class="v-grid">
+      <article class="v-card reveal">
+        <img src="assets/confianza.jpg" alt="Mujer profesional sonriendo con seguridad" loading="lazy" style="object-position:center 20%">
+        <div><small>Confianza</small><h3>Das el paso sin esperar sentirte lista.</h3></div>
+      </article>
+      <article class="v-card reveal d1">
+        <img src="assets/proyecto.jpg" alt="Emprendedora en su propio espacio de trabajo" loading="lazy" style="object-position:center 25%">
+        <div><small>Tu proyecto</small><h3>Ya tiene avances que puedes ver y contar.</h3></div>
+      </article>
+      <article class="v-card reveal d2">
+        <img src="assets/hero-camino.jpg" alt="Mujer caminando por un sendero al amanecer" loading="lazy" style="object-position:60% center">
+        <div><small>Rumbo</small><h3>Sabes hacia dónde vas, y cómo sostenerlo.</h3></div>
+      </article>
     </div>
     <ul class="res">
       <li><span class="n">1</span><div><b>Claridad sobre tu prioridad</b><span>Sabes en qué poner tu energía y en qué no.</span></div></li>
       <li><span class="n">2</span><div><b>Un plan de acción realista</b><span>Pasos concretos, con tiempo y medida.</span></div></li>
-      <li><span class="n">3</span><div><b>Hábitos de productividad</b><span>Avanzas aunque no tengas ganas.</span></div></li>
-      <li><span class="n">4</span><div><b>Mayor confianza para actuar</b><span>Das el paso sin esperar sentirte lista.</span></div></li>
-      <li><span class="n">5</span><div><b>Un proyecto con avances concretos</b><span>Resultados que puedes ver y contar.</span></div></li>
-      <li><span class="n">6</span><div><b>Herramientas para seguir sola</b><span>Mantienes el impulso sin depender de una mentora.</span></div></li>
+      <li><span class="n">3</span><div><b>Hábitos que no dependen del ánimo</b><span>Avanzas aunque no tengas ganas.</span></div></li>
+      <li><span class="n">4</span><div><b>Más confianza para actuar</b><span>Te reconoces capaz, con evidencia en la mano.</span></div></li>
+      <li><span class="n">5</span><div><b>Un proyecto con avances concretos</b><span>Resultados que puedes ver y compartir.</span></div></li>
+      <li><span class="n">6</span><div><b>Herramientas para seguir sola</b><span>Mantienes el impulso sin depender de nadie.</span></div></li>
     </ul>
   </div>
 </section>
 
-<!-- INCLUYE -->
-<section>
-  <div class="wrap">
-    <div class="center reveal">
-      <span class="kicker">¿Qué incluye?</span>
-      <h2>Todo para que <em>no vuelvas a soltar</em></h2>
+<!-- QUÉ INCLUYE -->
+<section class="incl pad" id="incluye">
+  <div class="wrap inc-grid">
+    <div class="book reveal">
+      <img src="assets/impulso.jpg" alt="Workbook IMPULSO: Confía contigo. Creo en ti. Avanza con propósito." loading="lazy">
+      <div class="stamp"><b>Tu workbook</b>Una página nueva cada semana</div>
     </div>
-    <div class="inc">
-      <div><span class="ic">🧭</span><b>5 sesiones de acompañamiento</b><span>Una por semana, de 60 minutos, solo para ti.</span></div>
-      <div><span class="ic">📓</span><b>Workbook exclusivo</b><span>Recibes las páginas de cada semana, para avanzar sin abrumarte.</span></div>
-      <div><span class="ic">✍️</span><b>Ejercicios prácticos y reflexiones</b><span>Tu Diario de Impulso y tareas que sí se hacen.</span></div>
-      <div><span class="ic">🛠️</span><b>Herramientas de transformación</b><span>Brújula, ciclo de la inconstancia, regla de los 20 minutos.</span></div>
-      <div><span class="ic">💬</span><b>Comunidad y seguimiento</b><span>Acompañamiento entre sesiones para no perder el rumbo.</span></div>
-      <div><span class="ic">🗓️</span><b>Plan de 90 días</b><span>Para que el impulso siga después del programa.</span></div>
+    <div>
+      <div class="reveal">
+        <span class="kicker">Qué incluye</span>
+        <h2>Todo para que <em>no vuelvas a soltar</em></h2>
+      </div>
+      <div class="inc reveal d1">
+        <div><b>5 sesiones de acompañamiento</b><span>Una por semana, de 60 minutos, enfocadas en ti y en tu proyecto.</span></div>
+        <div><b>Workbook IMPULSO exclusivo</b><span>Recibes las páginas de cada semana para avanzar sin abrumarte.</span></div>
+        <div><b>Ejercicios prácticos y reflexiones</b><span>Tu Diario de Impulso y tareas pensadas para hacerse, no para quedarse en papel.</span></div>
+        <div><b>Herramientas de transformación</b><span>La brújula, el ciclo de la inconstancia y la regla de los 20 minutos.</span></div>
+        <div><b>Comunidad y seguimiento</b><span>Acompañamiento entre sesiones para que no pierdas el rumbo.</span></div>
+        <div><b>Tu plan de 90 días</b><span>Para que el impulso siga mucho después del programa.</span></div>
+      </div>
     </div>
   </div>
 </section>
 
 <!-- IMPULSO O EVOLUCIÓN -->
-<section class="which">
+<section class="which pad">
   <div class="wrap">
     <div class="center reveal">
       <span class="kicker">¿Cuál es para ti?</span>
       <h2>¿IMPULSO o <em>Evolución?</em></h2>
     </div>
     <div class="vs">
-      <div class="me">
+      <div class="me reveal">
         <h3>IMPULSO</h3><div class="len">5 semanas · enfoque y acción</div>
         <p>Para cuando ya sabes qué quieres, pero te cuesta empezar o sostenerlo.</p>
-        <ul><li>Una prioridad, un plan, hábitos</li><li>Romper el ciclo de la inconstancia</li><li>Avances concretos en tu proyecto</li></ul>
+        <ul><li>Una prioridad, un plan y hábitos</li><li>Romper el ciclo de la inconstancia</li><li>Avances concretos en tu proyecto</li></ul>
+        <a href="#agenda" style="color:var(--mint)">Agenda tu cita →</a>
       </div>
-      <div>
+      <div class="reveal d1">
         <h3>EVOLUCIÓN</h3><div class="len">8 semanas · transformación completa</div>
         <p>Para cuando quieres replantear tu vida: visión, propósito, liderazgo y estrategia.</p>
         <ul><li>Visión, valores y metas de 90 días</li><li>Mentalidad, liderazgo y comunicación</li><li>Encuentros en El Jardín</li></ul>
-        <a id="link-evo" href="#" target="_blank" rel="noopener">Conoce Evolución →</a>
+        <a id="link-evo" href="https://www.mindfulbymonica.com/evolucion/">Conoce Evolución →</a>
       </div>
     </div>
   </div>
 </section>
 
 <!-- COACH -->
-<section>
+<section class="coach pad" id="coach">
   <div class="wrap">
-    <div class="coach-card reveal">
-      <img src="assets/monica.jpg" alt="Monica Villalba">
-      <div>
+    <div class="coach-grid">
+      <div class="portrait reveal">
+        <img src="assets/monica-retrato.jpg" alt="Mónica Villalba" loading="lazy">
+        <div class="sig">25+ años<small>acompañando personas</small></div>
+      </div>
+      <div class="reveal d1">
         <span class="kicker">Conoce a tu coach</span>
-        <h3>Monica Villalba</h3>
+        <h3>Mónica Villalba</h3>
         <div class="role">Coach de bienestar y crecimiento personal</div>
-        <p>Psicóloga y Coach de Salud y Bienestar certificada en EE. UU. Especialista en desarrollo humano, liderazgo y hábitos de transformación, con más de 25 años acompañando a personas a descubrir su potencial y construir la vida que desean.</p>
+        <p>Coach de Salud y Bienestar certificada en EE. UU., con más de 25 años acompañando a personas y comunidades en desarrollo humano, liderazgo y hábitos de transformación. Fundadora de Mindful Wellness y de la comunidad Mujeres con Propósito.</p>
+        <p>Mónica ha estado del otro lado: sabe lo que es empezar de nuevo, en otro país y en otro idioma. Por eso acompaña con calidez, con método y con la certeza de que todo es posible.</p>
         <blockquote>“Mi propósito es ayudarte a creer en ti, descubrir tu camino y avanzar con confianza.”</blockquote>
       </div>
+    </div>
+    <div class="mosaic">
+      <figure class="reveal"><img src="assets/jardin-encuentro.jpg" alt="Mónica guiando un encuentro de mujeres en El Jardín" loading="lazy"><figcaption>Encuentros en El Jardín</figcaption></figure>
+      <figure class="reveal d1"><img src="assets/mujeres-proposito.jpg" alt="Comunidad Mujeres con Propósito" loading="lazy"><figcaption>Mujeres con Propósito</figcaption></figure>
+      <figure class="reveal d2"><img src="assets/taller.jpg" alt="Mónica dando un taller" loading="lazy"><figcaption>Talleres y capacitaciones</figcaption></figure>
+      <figure class="reveal"><img src="assets/logros.jpg" alt="Mónica celebrando logros con su equipo" loading="lazy" style="object-position:center 30%"><figcaption>Celebrando logros</figcaption></figure>
     </div>
   </div>
 </section>
 
-<!-- INVERSIÓN -->
-<section class="invest" id="empezar">
+<!-- AGENDA TU CITA -->
+<section class="book-sec" id="agenda">
+  <div class="bg" aria-hidden="true"></div>
   <div class="wrap">
     <div class="center reveal">
       <span class="kicker">¡Tu momento es ahora!</span>
-      <h2>Vuelve a <em>avanzar</em></h2>
-      <p class="lead">Empezamos con una conversación gratuita de 20 minutos para conocer tu proyecto y confirmar que IMPULSO es lo que necesitas.</p>
+      <h2>Agenda tu <em>conversación gratuita</em></h2>
+      <p class="lead">20 minutos con Mónica para conocer tu proyecto y confirmar juntas que IMPULSO es lo que necesitas. Sin compromiso.</p>
     </div>
-    <div class="pcard reveal">
-      <div class="name">IMPULSO</div>
-      <div class="len">5 semanas · mentoría individual</div>
-      <div id="price-on" hidden>
-        <div class="amount js-precio"></div>
-        <div class="per">programa completo</div>
-        <div class="per" id="cuotas-line" hidden></div>
-      </div>
-      <p class="ask" id="price-off">Reserva tu tiempo con Mónica y conoce los detalles del próximo grupo.</p>
-      <ul>
-        <li>5 sesiones 1:1 de 60 minutos</li>
-        <li>Workbook exclusivo IMPULSO</li>
-        <li>Ejercicios, reflexiones y herramientas</li>
-        <li>Comunidad y seguimiento</li>
-        <li>Tu plan de 90 días</li>
-      </ul>
-      <a class="btn mint full" id="btn-llamada" href="#" target="_blank" rel="noopener">✨ Quiero reservar mi tiempo</a>
-      <div id="pay-on" hidden>
-        <div class="or">o inscríbete ya</div>
-        <div class="seg" id="seg" hidden>
-          <button type="button" class="on" data-v="completo">Pago completo</button>
-          <button type="button" data-v="cuotas" id="btn-cuotas">Cuotas</button>
-        </div>
-        <a class="btn go full" id="btn-tarjeta" href="#" target="_blank" rel="noopener">Inscribirme · pagar con tarjeta</a>
-        <p class="small" id="tarjeta-note"></p>
-        <div class="zelle">
-          <p><b>¿Prefieres Zelle?</b> Envía <b class="js-monto"></b> a <b class="js-zelle-nombre">Mindful Wellness &amp; Coaching LLC</b> al <b class="js-zelle-num">201-679-9969</b></p>
-          <img src="assets/zelle-qr.jpg" alt="Código QR de Zelle">
-          <div class="code">En la nota escribe <b id="z-code">IMPULSO</b> <button type="button" id="z-copy">Copiar</button></div>
-          <form class="form" id="zelle-form" autocomplete="on">
-            <label for="z-nombre">Tu nombre<input id="z-nombre" name="nombre" required autocomplete="name"></label>
-            <label for="z-tel">Tu WhatsApp<input id="z-tel" name="telefono" type="tel" required autocomplete="tel" inputmode="tel"></label>
-            <button class="btn wa full" type="submit">✅ Ya pagué · Enviar comprobante</button>
-          </form>
+    <div class="bk-grid">
+      <ol class="how reveal">
+        <li><i>1</i><b>Deja tus datos</b><span>Toma menos de un minuto. Te escribimos por WhatsApp.</span></li>
+        <li><i>2</i><b>Conversamos 20 minutos</b><span>Virtual o en persona en Wallington, NJ. Hablamos de ti y de lo que quieres retomar.</span></li>
+        <li><i>3</i><b>Empiezas tu Semana 1</b><span>Si es para ti, reservamos tu lugar y recibes tu workbook IMPULSO.</span></li>
+      </ol>
+
+      <div class="card reveal d1">
+        <div class="ttl">Quiero mi cita con Mónica</div>
+        <span class="free">Conversación gratuita · 20 min</span>
+        <form class="form" id="cita-form" autocomplete="on">
+          <label for="c-nombre">Tu nombre<input id="c-nombre" name="nombre" required autocomplete="name" placeholder="¿Cómo te llamas?"></label>
+          <label for="c-tel">Tu WhatsApp<input id="c-tel" name="telefono" type="tel" required autocomplete="tel" inputmode="tel" placeholder="(201) 000-0000"></label>
+          <label for="c-proy">¿Qué te gustaría retomar? <span style="font-weight:400;color:var(--muted)">(opcional)</span><textarea id="c-proy" name="proyecto" placeholder="Un negocio, una meta, un hábito…"></textarea></label>
+          <div class="fl" id="lbl-mod">¿Cómo prefieres?</div>
+          <div class="seg2" role="radiogroup" aria-labelledby="lbl-mod">
+            <input type="radio" name="modalidad" id="m1" value="Virtual" checked><label for="m1">Virtual</label>
+            <input type="radio" name="modalidad" id="m2" value="En persona"><label for="m2">En persona</label>
+          </div>
+          <div class="fl" id="lbl-hor">¿Qué horario te queda mejor?</div>
+          <div class="seg2" role="radiogroup" aria-labelledby="lbl-hor">
+            <input type="radio" name="horario" id="h1" value="Mañana" checked><label for="h1">Mañana</label>
+            <input type="radio" name="horario" id="h2" value="Tarde"><label for="h2">Tarde</label>
+            <input type="radio" name="horario" id="h3" value="Noche"><label for="h3">Noche</label>
+            <input type="radio" name="horario" id="h4" value="Fin de semana"><label for="h4">Fin de semana</label>
+          </div>
+          <button class="btn mint full" type="submit" style="margin-top:6px">Agendar mi cita por WhatsApp <span class="arr">→</span></button>
+        </form>
+        <p class="small">Al tocar el botón se abre WhatsApp con tus datos listos para enviar.</p>
+        <div class="alt-links"><a id="wa-direct" href="#" target="_blank" rel="noopener">Prefiero escribir directo</a><a href="mailto:info@mindfulbymonica.com?subject=Quiero%20mi%20cita%20para%20IMPULSO">info@mindfulbymonica.com</a></div>
+
+        <!-- Inversión: aparece solo si hay precio en config.js -->
+        <div class="price" id="pay-on" hidden>
+          <div class="or">¿Ya decidiste? Inscríbete</div>
+          <div class="amount js-precio"></div>
+          <div class="per">programa completo</div>
+          <div class="per" id="cuotas-line" hidden></div>
+          <div class="seg" id="seg" hidden style="margin-top:12px">
+            <button type="button" class="on" data-v="completo">Pago completo</button>
+            <button type="button" data-v="cuotas" id="btn-cuotas">Cuotas</button>
+          </div>
+          <a class="btn wine full" id="btn-tarjeta" href="#" target="_blank" rel="noopener" style="margin-top:10px">Inscribirme · pagar con tarjeta</a>
+          <p class="small" id="tarjeta-note"></p>
+          <div class="zelle">
+            <p style="font-size:.95rem"><b>¿Prefieres Zelle?</b> Envía <b class="js-monto"></b> a <b class="js-zelle-nombre">Mindful Wellness &amp; Coaching LLC</b> al <b class="js-zelle-num">201-679-9969</b></p>
+            <img src="assets/zelle-qr.jpg" alt="Código QR de Zelle" loading="lazy">
+            <div class="code">En la nota escribe <b id="z-code">IMPULSO</b> <button type="button" id="z-copy">Copiar</button></div>
+            <form class="form" id="zelle-form" autocomplete="on">
+              <label for="z-nombre">Tu nombre<input id="z-nombre" name="nombre" required autocomplete="name"></label>
+              <label for="z-tel">Tu WhatsApp<input id="z-tel" name="telefono" type="tel" required autocomplete="tel" inputmode="tel"></label>
+              <button class="btn wa full" type="submit">Ya pagué · enviar comprobante</button>
+            </form>
+          </div>
         </div>
       </div>
     </div>
@@ -558,16 +769,17 @@ footer a{color:#fff;text-decoration:none;font-weight:700}
 </section>
 
 <!-- PREGUNTAS -->
-<section class="faq">
+<section class="faq pad" id="preguntas">
   <div class="wrap">
     <div class="center reveal">
       <span class="kicker">Preguntas frecuentes</span>
       <h2>Antes de <em>empezar</em></h2>
     </div>
-    <div style="margin-top:30px">
+    <div style="margin-top:36px">
       <details><summary>¿Necesito tener un negocio?</summary><p>No. Puede ser un emprendimiento, un libro, un cambio de hábitos o una meta que dejaste pendiente. Lo importante es elegir una prioridad.</p></details>
-      <details><summary>¿Cómo son las sesiones?</summary><p>Son 5 sesiones individuales de 60 minutos, una por semana. Entre sesiones trabajas con tu workbook y tienes seguimiento.</p></details>
+      <details><summary>¿Cómo son las sesiones?</summary><p>Son 5 sesiones de 60 minutos, una por semana, virtuales o en persona. Entre sesiones trabajas con tu workbook y tienes seguimiento.</p></details>
       <details><summary>¿Y si ya lo he intentado antes y lo dejé?</summary><p>Justamente para eso es IMPULSO. En la semana 2 descubrimos qué rompe tu impulso, y en la semana 5 creas el sistema para sostenerlo sin depender de nadie.</p></details>
+      <details><summary>¿Qué pasa en la conversación gratuita?</summary><p>Son 20 minutos para conocerte, escuchar qué quieres retomar y ver juntas si IMPULSO es el camino. Si no lo es, te oriento hacia lo que más te conviene.</p></details>
       <details><summary>¿Qué pasa si necesito reprogramar?</summary><p>Avísame con al menos 24 horas. Los cambios con menos tiempo cuentan como sesión usada, salvo emergencias.</p></details>
       <details><summary>¿Es terapia?</summary><p>No. IMPULSO es mentoría y coaching enfocado en la acción. Si aparece algo que necesita atención terapéutica, te ayudo a encontrar el apoyo adecuado.</p></details>
     </div>
@@ -575,26 +787,60 @@ footer a{color:#fff;text-decoration:none;font-weight:700}
 </section>
 
 <section class="final">
-  <div class="wrap">
+  <div class="wrap reveal">
     <h2>¡Tu momento es ahora!</h2>
     <p>Confía en ti. Avanza con propósito. Mantén el impulso.</p>
-    <a class="btn mint" href="#empezar">Quiero recuperar mi impulso →</a>
+    <a class="btn mint pulse" href="#agenda">Agenda tu conversación gratuita <span class="arr">→</span></a>
   </div>
 </section>
 
 <footer>
-  <div class="brand">MINDFUL WELLNESS &amp; COACHING</div>
-  <div class="links">
-    <a id="wa-footer" href="#" target="_blank" rel="noopener">📲 WhatsApp 201-679-9969</a>
-    <a href="https://instagram.com/mindfulwellnessnyc" target="_blank" rel="noopener">📸 @mindfulwellnessnyc</a>
-    <a href="https://www.mindfulbymonica.com/" target="_blank" rel="noopener">🌐 mindfulbymonica.com</a>
+  <div class="wrap">
+    <div class="f-grid">
+      <div class="f-brand">
+        <img src="assets/logo-light.png" alt="Mindful Wellness">
+        <small>by Monica V.</small>
+        <p>Conecta tu corazón con tus pensamientos y tu propósito de vida.</p>
+      </div>
+      <div>
+        <h4>Programas</h4>
+        <ul>
+          <li><a href="#top">IMPULSO</a></li>
+          <li><a href="https://www.mindfulbymonica.com/evolucion/">Evolución</a></li>
+          <li><a href="https://www.mindfulbymonica.com/cajita/">Cajita ¿Qué necesitas escuchar hoy?</a></li>
+          <li><a href="https://www.mindfulbymonica.com/">Todos los servicios</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contacto</h4>
+        <ul>
+          <li><a id="wa-footer" href="#" target="_blank" rel="noopener">WhatsApp 201-679-9969</a></li>
+          <li><a href="mailto:info@mindfulbymonica.com">info@mindfulbymonica.com</a></li>
+          <li>Wallington, New Jersey</li>
+          <li>Español · English</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Síguenos</h4>
+        <div class="soc">
+          <a href="https://www.instagram.com/mindfulwellnessnyc" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41a3.7 3.7 0 0 1-1.38-.9 3.7 3.7 0 0 1-.9-1.38c-.16-.42-.36-1.06-.41-2.23C2.17 15.58 2.16 15.2 2.16 12s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.42 2.17 8.8 2.16 12 2.16M12 0C8.74 0 8.33.01 7.05.07 5.78.13 4.9.33 4.14.63c-.79.3-1.46.72-2.13 1.38A5.9 5.9 0 0 0 .63 4.14C.33 4.9.13 5.78.07 7.05.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.06 1.27.26 2.15.56 2.91.3.79.72 1.46 1.38 2.13a5.9 5.9 0 0 0 2.13 1.38c.76.3 1.64.5 2.91.56C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c1.27-.06 2.15-.26 2.91-.56a5.9 5.9 0 0 0 2.13-1.38 5.9 5.9 0 0 0 1.38-2.13c.3-.76.5-1.64.56-2.91.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.06-1.27-.26-2.15-.56-2.91a5.9 5.9 0 0 0-1.38-2.13A5.9 5.9 0 0 0 19.86.63C19.1.33 18.22.13 16.95.07 15.67.01 15.26 0 12 0zm0 5.84a6.16 6.16 0 1 0 0 12.32 6.16 6.16 0 0 0 0-12.32zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.4-11.85a1.44 1.44 0 1 0 0 2.88 1.44 1.44 0 0 0 0-2.88z"/></svg></a>
+          <a href="https://www.facebook.com/mindfulwellnessnyc" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M24 12.07C24 5.41 18.63 0 12 0S0 5.4 0 12.07C0 18.1 4.39 23.1 10.13 24v-8.44H7.08v-3.49h3.04V9.41c0-3.02 1.8-4.7 4.54-4.7 1.31 0 2.68.24 2.68.24v2.97h-1.5c-1.5 0-1.96.93-1.96 1.89v2.26h3.32l-.53 3.5h-2.8V24C19.62 23.1 24 18.1 24 12.07"/></svg></a>
+          <a href="https://www.youtube.com/@mindfulwellnessnyc" target="_blank" rel="noopener" aria-label="YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.19a3.02 3.02 0 0 0-2.12-2.14C19.5 3.55 12 3.55 12 3.55s-7.5 0-9.38.5A3.02 3.02 0 0 0 .5 6.19C0 8.07 0 12 0 12s0 3.93.5 5.81a3.02 3.02 0 0 0 2.12 2.14c1.87.5 9.38.5 9.38.5s7.5 0 9.38-.5a3.02 3.02 0 0 0 2.12-2.14C24 15.93 24 12 24 12s0-3.93-.5-5.81zM9.55 15.57V8.43L15.82 12l-6.27 3.57z"/></svg></a>
+          <a id="wa-soc" href="#" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.16-.17.2-.35.22-.64.07-.3-.15-1.26-.46-2.39-1.48-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.6.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.21-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.07 2.88 1.21 3.07.15.2 2.1 3.2 5.08 4.49.71.31 1.27.49 1.7.63.72.23 1.37.2 1.88.12.57-.09 1.76-.72 2.01-1.41.25-.7.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35M12.05 21.8h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 0 1-1.51-5.26c0-5.45 4.44-9.88 9.9-9.88 2.64 0 5.12 1.03 6.99 2.9a9.82 9.82 0 0 1 2.89 6.99c0 5.45-4.44 9.88-9.89 9.88m8.41-18.3A11.82 11.82 0 0 0 12.05 0C5.5 0 .16 5.34.16 11.89c0 2.1.55 4.14 1.59 5.95L.06 24l6.3-1.65a11.88 11.88 0 0 0 5.68 1.45h.01c6.55 0 11.89-5.34 11.89-11.9 0-3.18-1.24-6.16-3.48-8.41"/></svg></a>
+        </div>
+        <p style="margin-top:12px;font-size:.92rem">@mindfulwellnessnyc</p>
+      </div>
+    </div>
+    <div class="f-bottom">
+      <span>© <span id="yr"></span> Mindful Wellness &amp; Coaching LLC · <a href="https://www.mindfulbymonica.com/">mindfulbymonica.com</a></span>
+      <span>IMPULSO es coaching y mentoría; no sustituye atención médica ni psicológica.</span>
+    </div>
   </div>
-  <div>© <span id="yr"></span> Mindful Wellness &amp; Coaching LLC</div>
 </footer>
 
 <div class="mbar" id="mbar">
-  <div><b>IMPULSO</b><small>5 semanas para volver a avanzar</small></div>
-  <a href="#empezar">✨ Quiero empezar</a>
+  <div><b>IMPULSO</b><small>Tu conversación gratuita de 20 min</small></div>
+  <a href="#agenda">Agenda tu cita</a>
 </div>
 
 <script src="config.js"></script>
@@ -607,26 +853,50 @@ const money = n => "$" + Number(n).toLocaleString("en-US");
 const wa = msg => "https://wa.me/" + (C.whatsapp || "12016799969") + "?text=" + encodeURIComponent(msg);
 const log = d => { if (!C.sheetUrl) return; try { navigator.sendBeacon(C.sheetUrl, new Blob([JSON.stringify(Object.assign({ programa: "impulso" }, d))], { type: "text/plain" })); } catch (_) {} };
 
-// ¿Es para ti? — checklist con resultado
+// letras del título
+$$("#h1 span").forEach((s, i) => s.style.animationDelay = (0.35 + i * 0.06) + "s");
+
+// enlaces de WhatsApp
+const waHola = wa("Hola Mónica 💜 Vi la página de IMPULSO y me gustaría conversar contigo.");
+["#wa-footer", "#wa-soc", "#wa-direct"].forEach(id => { const a = $(id); if (a) a.href = waHola; });
+if (C.evolucion) $("#link-evo").href = C.evolucion;
+$("#yr").textContent = new Date().getFullYear();
+
+// ¿Es para ti?
 const checks = $$(".check");
 const verdict = () => {
   const n = checks.filter(c => c.getAttribute("aria-pressed") === "true").length;
   const v = $("#verdict");
   if (n === 0) v.textContent = "Toca las frases con las que te identificas.";
-  else if (n < 3) v.innerHTML = `Marcaste <b>${n} de 6</b>. Ya sientes el llamado: IMPULSO te ayuda a dar el siguiente paso.`;
-  else v.innerHTML = `Marcaste <b>${n} de 6</b>. IMPULSO fue creado para ti. 💜`;
+  else if (n < 3) v.innerHTML = `<b>${n} de 6</b><br>Ya sientes el llamado. IMPULSO te ayuda a dar el siguiente paso.`;
+  else v.innerHTML = `<b>${n} de 6</b><br>IMPULSO fue creado pensando en ti.`;
+  $("#fit-cta").classList.toggle("ready", n > 0);
 };
 checks.forEach(c => c.addEventListener("click", () => { c.setAttribute("aria-pressed", c.getAttribute("aria-pressed") !== "true"); verdict(); }));
+
+// formulario de cita → WhatsApp
+$("#cita-form").addEventListener("submit", e => {
+  e.preventDefault();
+  const d = Object.fromEntries(new FormData(e.target));
+  const marcadas = checks.filter(c => c.getAttribute("aria-pressed") === "true").map(c => c.textContent.trim());
+  log(Object.assign({ tipo: "cita" }, d));
+  const lines = [
+    "Hola Mónica 💜 Quiero agendar mi conversación gratuita de IMPULSO.",
+    `• Nombre: ${d.nombre}`,
+    `• WhatsApp: ${d.telefono}`,
+    `• Prefiero: ${d.modalidad}, en la ${d.horario.toLowerCase()}`.replace("en la fin de semana", "el fin de semana")
+  ];
+  if (d.proyecto && d.proyecto.trim()) lines.push(`• Quiero retomar: ${d.proyecto.trim()}`);
+  if (marcadas.length) lines.push(`• Me identifico con: ${marcadas.join("; ")}`);
+  window.location.href = wa(lines.join("\n"));
+});
 
 // precio y pagos desde config.js
 const precio = C.precio, cu = C.cuotas || {};
 let plan = "completo";
 const planTxt = () => plan === "cuotas" ? `en ${cu.numero} cuotas de ${money(cu.monto)}` : `pago completo de ${money(precio)}`;
-$("#btn-llamada").href = "https://www.mindfulbymonica.com/#store"; $("#btn-llamada").removeAttribute("target");
-$("#wa-footer").href = wa("Hola Mónica 💜 Tengo una pregunta sobre IMPULSO:");
-$("#link-evo").href = C.evolucion || "https://www.mindfulbymonica.com/evolucion/";
 if (precio) {
-  $("#price-on").hidden = false; $("#price-off").hidden = true; $("#pay-on").hidden = false;
+  $("#pay-on").hidden = false;
   $$(".js-precio").forEach(e => e.textContent = money(precio));
   if (C.zelle) { $$(".js-zelle-nombre").forEach(e => e.textContent = C.zelle.nombre); $$(".js-zelle-num").forEach(e => e.textContent = C.zelle.numero); }
   if (cu.activo) { $("#seg").hidden = false; $("#btn-cuotas").textContent = `${cu.numero} cuotas de ${money(cu.monto)}`; $("#cuotas-line").hidden = false; $("#cuotas-line").textContent = `o ${cu.numero} cuotas de ${money(cu.monto)}`; }
@@ -649,17 +919,22 @@ if (precio) {
     e.preventDefault();
     const d = Object.fromEntries(new FormData(e.target));
     log(Object.assign({ tipo: "zelle", plan, codigo: ZID }, d));
-    window.location.href = wa([`Hola Mónica 💜 Acabo de pagar por Zelle mi inscripción en IMPULSO (${planTxt()}). Código ${ZID}.`, `• Nombre: ${d.nombre}`, `• WhatsApp: ${d.telefono}`, `Te adjunto el comprobante 👇`].join("\n"));
+    window.location.href = wa([`Hola Mónica 💜 Acabo de pagar por Zelle mi inscripción en IMPULSO (${planTxt()}). Código ${ZID}.`, `• Nombre: ${d.nombre}`, `• WhatsApp: ${d.telefono}`, "Te adjunto el comprobante 👇"].join("\n"));
   });
 }
-$("#yr").textContent = new Date().getFullYear();
 
-// barra de lectura
-const rb = $("#readbar");
-const onScroll = () => { const h = document.documentElement; rb.style.width = (h.scrollTop / Math.max(1, h.scrollHeight - h.clientHeight) * 100) + "%"; };
+// barra de lectura, navegación y parallax
+const rb = $("#readbar"), nav = $("#nav"), px = $("#parallax");
+const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+const onScroll = () => {
+  const h = document.documentElement, y = h.scrollTop;
+  rb.style.width = (y / Math.max(1, h.scrollHeight - h.clientHeight) * 100) + "%";
+  nav.classList.toggle("solid", y > innerHeight * 0.7);
+  if (px && !reduce) { const r = px.parentElement.getBoundingClientRect(); if (r.bottom > 0 && r.top < innerHeight) px.style.transform = `translateY(${(r.top / innerHeight) * -60}px)`; }
+};
 addEventListener("scroll", onScroll, { passive: true }); onScroll();
 
-// brújula: la aguja apunta a la semana que estás leyendo
+// brújula
 const angles = [0, 72, 144, 216, 288];
 const steps = $$(".step"), lbls = $$(".compass .lbl");
 function setStep(i) {
@@ -684,17 +959,16 @@ if ("IntersectionObserver" in window) {
   const lo = new IntersectionObserver(es => es.forEach(e => e.target.classList.toggle("lit", e.isIntersecting)), { rootMargin: "-30% 0px -30% 0px" });
   $$(".res li").forEach(li => lo.observe(li));
 
-  // el ciclo se recorre solo cuando está a la vista
   const nodes = $$("#loop .node"); let k = 0, timer = null;
   new IntersectionObserver(es => es.forEach(e => {
     if (e.isIntersecting && !timer) timer = setInterval(() => { nodes.forEach((n, j) => n.classList.toggle("on", j === k)); k = (k + 1) % nodes.length; }, 1100);
     if (!e.isIntersecting && timer) { clearInterval(timer); timer = null; }
   })).observe($("#loop"));
 
-  const bar = $("#mbar"), seen = { hero: true, pay: false };
-  const upd = () => bar.classList.toggle("show", !seen.hero && !seen.pay);
+  const bar = $("#mbar"), seen = { hero: true, book: false };
+  const upd = () => bar.classList.toggle("show", !seen.hero && !seen.book);
   new IntersectionObserver(es => es.forEach(e => { seen.hero = e.isIntersecting; upd(); })).observe($(".hero"));
-  new IntersectionObserver(es => es.forEach(e => { seen.pay = e.isIntersecting; upd(); })).observe($("#empezar"));
+  new IntersectionObserver(es => es.forEach(e => { seen.book = e.isIntersecting; upd(); })).observe($("#agenda"));
 } else {
   $$(".reveal").forEach(el => el.classList.add("in")); steps.forEach(s => s.classList.add("lit"));
 }
