@@ -4,7 +4,7 @@
 window.CONFIG = {
   // PRECIO del programa completo (en dólares).
   // Si lo dejas en null, la página invita a reservar tiempo con Mónica en el Wellness Store.
-  precio: 147,
+  precio: 375,
 
   // PAGO EN CUOTAS (opcional). Si "activo" es false, la opción no aparece.
   cuotas: { activo: false, numero: 2, monto: 0 },
@@ -13,7 +13,7 @@ window.CONFIG = {
   // Si un enlace está vacío "", el botón de tarjeta abre WhatsApp para coordinar el pago.
   // En Stripe, en "After payment" pon esta dirección:
   //   https://www.mindfulbymonica.com/impulso/gracias.html?session_id={CHECKOUT_SESSION_ID}
-  stripe: { completo: "https://book.stripe.com/4gM28s0gxa8s6ZG3qeenS0r", cuotas: "" },
+  stripe: { completo: "https://book.stripe.com/fZu9AU4wN1BWck0e4SenS0t", cuotas: "" },
 
   // Zelle
   zelle: { nombre: "Mindful Wellness & Coaching LLC", numero: "201-679-9969" },
